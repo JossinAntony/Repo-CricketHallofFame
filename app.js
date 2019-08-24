@@ -198,7 +198,6 @@ app.post('/retrieveBatsmanforEditAPI',(req,res)=>{
 app.post('/updateBatsman/:id',(req,res)=>{
     var batsman = req.body;
     var id = req.params.id;
-
     batsmenSchema.update({_id:id},{$set:{urating:batsman.urating,
         name:batsman.name,
         status:batsman.status,
@@ -229,7 +228,6 @@ app.post('/updateBatsman/:id',(req,res)=>{
         }else{
             res.send('<script>alert("Entry updated!")</script>');
         }
-
     });
     });
 
@@ -306,6 +304,65 @@ app.get('/retrieveBowler/:id',(req,res)=>{
         }
     })
 });
+
+//set view for search for edit Bowler
+app.get('/searchForEditBowler',(req,res)=>{
+    res.render('searchForEditBowler', {nav:navlink, pageName:pagename,title:"Search"});
+});
+
+//Retrieve batsman for edit
+app.post('/retrieveBowlerforEditAPI',(req,res)=>{
+    var sname = req.body.sbowler;
+    bowlersSchema.find({name:sname},(error,data)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else{
+            if(data.length < 1){
+                res.send('<script>alert("Searched entry does not exist in Database, please try again!")</script>')
+            }else{
+            res.render('viewBowlerForEdit',{nav:navlink, pageName:pagename,title:"Search", bowler:data});
+        }
+        }
+    })
+});
+
+//update Batsman
+app.post('/updateBowler/:id',(req,res)=>{
+    var bowler = req.body;
+    var id = req.params.id;
+    bowlersSchema.update({_id:id},{$set:{urating:bowler.urating,
+        name:bowler.name,
+        status:bowler.status,
+        country:bowler.country,
+        style:bowler.style,
+        tmatches:bowler.tmatches,
+        odimatches:bowler.odimatches,
+        t20matches:bowler.t20matches,
+        tballs:bowler.tballs,
+        odiballs:bowler.odiballs,
+        t20balls:bowler.t20balls,
+        twkts:bowler.twkts,
+        odiwkts:bowler.odiwkts,
+        t20wkts:bowler.t20wkts,
+        trate:bowler.trate,
+        odirate:bowler.odirate,
+        t20rate:bowler.t20rate,
+        tavg:bowler.tavg,
+        odiavg:bowler.odiavg,
+        t20avg:bowler.t20avg,
+        imgsrc:bowler.imgsrc,
+        profile:bowler.profile
+    }},(error,data)=>{
+        if(error){
+            throw error;
+            res.send (error);
+        }else{
+            res.send('<script>alert("Entry updated!")</script>');
+        }
+    });
+    });
+
 //---------------------------------------------
 //-------Add players to database--------------
 
