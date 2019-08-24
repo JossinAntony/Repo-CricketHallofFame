@@ -16,27 +16,26 @@
             <a class="active" id="activ" href="/signup">SignUp</a>
         </div>
     
-    <div class="container mt-5">
-        <div class="row justify-content-md-center">
-            <div class="col col-12 col-md-4"></div>
-            <div class="col col-12 col-md-4 border border-secondary rounded p-5">
-                <form action="/userlogin" method="POST">
-                    <div class="form-group">
-                        <center><h3>SignIn</h3></center>
-                        <label>Username</label>
-                        <input type="text" class="form-control" id="" name="uname" aria-describedby="usernameHelp" placeholder="Enter username">
+        <div class="container mt-5">
+                <div class="row justify-content-md-center">
+                    <div class="col col-12 col-md-4"></div>
+                    <div class="col col-12 col-md-4 border border-secondary rounded p-5">
+                        <form action="/userlogin" method="POST">
+                            <div class="form-group">
+                                <center><h3>SignIn</h3></center>
+                                <label>Username</label>
+                                <input type="text" class="form-control" id="" name="uname" aria-describedby="usernameHelp" placeholder="Enter username">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input type="password" class="form-control" id="" name="upass" placeholder="Password">
+                            </div>
+                           <center><button type="submit" class="btn btn-primary"> Signin</button></center>
+                           <p><a href="#">New User?</a><a href="/signup" style="float:right;">SignUp</a></p>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" class="form-control" id="" name="upass" placeholder="Password">
-                    </div>
-                   <center><button type="submit" class="btn btn-primary"> Signin</button></center>
-                   <p><a href="#">New User?</a><a href="/signup" style="float:right;">SignUp</a></p>
-                </form>
+                    <div class="col col-12 col-md-4"></div>
+                </div>
             </div>
-            <div class="col col-12 col-md-4"></div>
-        </div>
-    </div>
-
 </body>
 </html>
