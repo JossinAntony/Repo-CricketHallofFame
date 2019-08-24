@@ -18,8 +18,8 @@ navlink = [
         "link":"/viewBowlers"
     },
     {
-        "title":"Add player",
-        "link":"/addPlayer"
+        "title":"Admin Panel",
+        "link":"/adminPanel"
     }
 ];
 
@@ -135,8 +135,40 @@ app.get('/viewBatsmen',(req,res)=>{
     })
 });
 //-------------------------------------------
+//--------Retrieve single batsman-----------
+//Retrieve single batsman API
+app.get('/retrieveBatsmanAPI',(req,res)=>{
+    id = req.query.q;
+    batsmenSchema.find({_id:id},(error,data)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else{
+            res.send(data);
+        }
+    })
+})
+
+//Retrieve single batsman API LInk
+const retrieveBatsmanAPILink = 'http://localhost:3046/retrieveBatsmanAPI'
+
+//Retrieve single batsman view
+app.get('/retrieveBatsman/:id',(req,res)=>{
+    var id= req.params.id;
+    request(retrieveBatsmanAPILink+'/?q='+id,(error,response,body)=>{
+        if (error){
+            throw error;
+            res,send(error);
+        }else{
+            data = JSON.parse(body);
+            res.render('viewBatsman',{nav:navlink, batsman:data,title:"Batsman"});
+        }
+    })
+});
+
+
 //--------Save Bowlers-------------------
-//save batsmen entriesAPI
+//save bowlers entriesAPI
 app.post('/saveBowler', (req,res)=>{
     var item = req.body;
     var bowler = bowlersSchema(item);
@@ -180,8 +212,8 @@ app.get('/viewBowlers',(req,res)=>{
 //-------Add players to database--------------
 
 //set selection view
-app.get('/addPlayer',(req,res)=>{
-    res.render('addPlayer',{nav:navlink, title:"Add Player"});
+app.get('/adminPanel',(req,res)=>{
+    res.render('adminPanel',{nav:navlink, title:"Admin Panel"});
 });
 
 app.get('/addBatsman',(req,res)=>{
