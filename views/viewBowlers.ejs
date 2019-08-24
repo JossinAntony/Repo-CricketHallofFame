@@ -23,7 +23,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="/"><h3><em>Hall of Fame</em></h3></a>
+    <a class="navbar-brand" href="/"><h3><em><%= pagename.pagename %></em></h3></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -81,7 +81,7 @@
                         <h6 class="card-subtitle mb-2 text-muted"><%= bowlers[i].country %></h6>
                         <br>
                         <h5 class="">Rating: <%= bowlers[i].urating %> /10</h5>
-                        <a href="" class="btn btn-info">Read more..</a>
+                        <a href="/retrieveBowler/<%= bowlers[i]._id %>" class="btn btn-info">Read more..</a>
                     </div>
                 </div>
             </div>

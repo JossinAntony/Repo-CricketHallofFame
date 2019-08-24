@@ -68,32 +68,28 @@
 <div class="container">
     <div class="row justify-content-center">
             <div class="col-auto mb-3"> 
-                <% for(var i=0; i < batsman.length; i++) { %>
+                <% for(var i=0; i < bowler.length; i++) { %>
                     <div class="card">
                         <div class="card card-block d-flex" style="height: 250px; border: 0">
                             <div class="card-body align-items-center d-flex justify-content-center">
-                                <img class="card-img-top " src = "<%= batsman[i].imgsrc %>" alt="Card image cap" style="width: 300px; height: 300 px; border:0;"/>
+                                <img class="card-img-top " src = "<%= bowler[i].imgsrc %>" alt="Card image cap" style="width: 300px; height: 300 px; border:0;"/>
                             </div>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title"><%= batsman[i].name %></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Country: <%= batsman[i].country %></h6>
+                            <h5 class="card-title"><%= bowler[i].name %></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Country: <%= bowler[i].country %></h6>
                             <table class="table-borderless">
                                 <tr>
                                 <td valign="top"><b>Rating:</b></td>
-                                <td text-align="center"><%= batsman[i].urating %> /10</td>
+                                <td text-align="center"><%= bowler[i].urating %> /10</td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><b>Status:</b></td>
-                                    <td text-align="center"><%= batsman[i].status %></td>
-                                </tr>
-                                <tr>
-                                    <td valign="top"><b>Player role:</b></td>
-                                    <td text-align="center"><%= batsman[i].role %></td>
+                                    <td text-align="center"><%= bowler[i].status %></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><b>Player style:</b></td>
-                                    <td text-align="center"><%= batsman[i].style %></td>
+                                    <td text-align="center"><%= bowler[i].style %></td>
                                 </tr>
                             </table>
                         <br>
@@ -102,38 +98,38 @@
                                     <tr>
                                         <th>Category</th>
                                         <th>Matches played</th>
-                                        <th>Runs scored</th>
-                                        <th>Batting average</th>
-                                        <th>Strike rate</th>
-                                        <th>Centuries</th>
+                                        <th>Balls bowled</th>
+                                        <th>Wickets taken</th>
+                                        <th>Bowling rate</th>
+                                        <th>Bowling average</th>
                                     </tr>
                                 </thead>
                                 <tbody>
 
                                     <tr>
                                         <td>Test</td>
-                                        <td> <%= batsman[i].tmatches %></td>
-                                        <td> <%= batsman[i].truns %></td>
-                                        <td> <%= batsman[i].tavg %></td>
-                                        <td> <%= batsman[i].trate %></td>
-                                        <td> <%= batsman[i].t100 %></td>
+                                        <td> <%= bowler[i].tmatches %></td>
+                                        <td> <%= bowler[i].tballs %></td>
+                                        <td> <%= bowler[i].twkts %></td>
+                                        <td> <%= bowler[i].trate %></td>
+                                        <td> <%= bowler[i].tavg %></td>
                                     </tr>
                                     <tr>
-                                        <td>ODI</td>
-                                        <td> <%= batsman[i].odimatches %></td>
-                                        <td> <%= batsman[i].odiruns %></td>
-                                        <td> <%= batsman[i].odiavg %></td>
-                                        <td> <%= batsman[i].odirate %></td>
-                                        <td> <%= batsman[i].odi100 %></td>
-                                    </tr>
-                                    <tr>
-                                        <td>T-20</td>
-                                        <td> <%= batsman[i].t20matches %></td>
-                                        <td> <%= batsman[i].t20runs %></td>
-                                        <td> <%= batsman[i].t20avg %></td>
-                                        <td> <%= batsman[i].t20rate %></td>
-                                        <td> <%= batsman[i].t20100 %></td>
-                                    </tr>
+                                            <td>ODI</td>
+                                            <td> <%= bowler[i].odimatches %></td>
+                                            <td> <%= bowler[i].odiballs %></td>
+                                            <td> <%= bowler[i].odiwkts %></td>
+                                            <td> <%= bowler[i].odirate %></td>
+                                            <td> <%= bowler[i].odiavg %></td>
+                                        </tr>
+                                        <tr>
+                                                <td>T20</td>
+                                                <td> <%= bowler[i].t20matches %></td>
+                                                <td> <%= bowler[i].t20balls %></td>
+                                                <td> <%= bowler[i].t20wkts %></td>
+                                                <td> <%= bowler[i].t20rate %></td>
+                                                <td> <%= bowler[i].t20avg %></td>
+                                            </tr>
                                 </tbody>
                             </table>
                             <table border="0" width="100%" ID="">
@@ -143,7 +139,7 @@
                             </table>
                             <table border="0" width="100%" ID="">
                                 <tr style="background-color:#f2f2f2;color:black;">
-                                    <td><em><br>"<%= batsman[i].profile %>"</em></td>
+                                    <td><em><br>"<%= bowler[i].profile %>"</em></td>
                                 </tr>
                             </table>
                         </div>

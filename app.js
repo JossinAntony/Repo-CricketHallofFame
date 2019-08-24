@@ -23,6 +23,8 @@ navlink = [
     }
 ];
 
+pagename = {'pagename':'Cricket Hall of Fame'};
+
 Mongoose.connect('mongodb://localhost:27017/cricketDB',{ useNewUrlParser: true }, (err, res) => {
     if (err) throw err;
     //console.log('Database online');
@@ -118,7 +120,7 @@ app.get('/',(req,res)=>{
             res.send(error);
         }else {
             data = JSON.parse(body);
-            res.render('viewBatsmen',{nav:navlink, title: "Batsmen", batsmans:data })
+            res.render('viewBatsmen',{nav:navlink, title: "Batsmen",pageName:pagename, batsmans:data })
         }
     })
 });
@@ -130,7 +132,7 @@ app.get('/viewBatsmen',(req,res)=>{
             res.send(error);
         }else {
             var data = JSON.parse(body);
-            res.render('viewBatsmen',{nav:navlink, title: "Batsmen", batsmans:data })
+            res.render('viewBatsmen',{nav:navlink, title: "Batsmen",pageName:pagename, batsmans:data })
         }
     })
 });
@@ -161,7 +163,7 @@ app.get('/retrieveBatsman/:id',(req,res)=>{
             res,send(error);
         }else{
             data = JSON.parse(body);
-            res.render('viewBatsman',{nav:navlink, batsman:data,title:"Batsman"});
+            res.render('viewBatsman',{nav:navlink, batsman:data,pageName:pagename,title:"Batsman"});
         }
     })
 });
@@ -204,24 +206,55 @@ app.get('/viewBowlers',(req,res)=>{
             res.send(error);
         }else{
             var data = JSON.parse(body);
-            res.render('viewBowlers',{nav:navlink, title:'Bowlers', bowlers:data})
+            res.render('viewBowlers',{nav:navlink, title:'Bowlers',pageName:pagename, bowlers:data})
         }
     });
 });
 //---------------------------------------
+//--------Retrieve single Bowler-----------
+//Retrieve single batsman API
+app.get('/retrieveBowlerAPI',(req,res)=>{
+    id = req.query.q;
+    bowlersSchema.find({_id:id},(error,data)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else{
+            res.send(data);
+        }
+    })
+})
+
+//Retrieve single bowler API LInk
+const retrieveBowlerAPILink = 'http://localhost:3046/retrieveBowlerAPI'
+
+//Retrieve single bowler view
+app.get('/retrieveBowler/:id',(req,res)=>{
+    var id= req.params.id;
+    request(retrieveBowlerAPILink+'/?q='+id,(error,response,body)=>{
+        if (error){
+            throw error;
+            res,send(error);
+        }else{
+            data = JSON.parse(body);
+            res.render('viewBowler',{nav:navlink, bowler:data,pageName:pagename,title:"Bowler"});
+        }
+    })
+});
+//---------------------------------------------
 //-------Add players to database--------------
 
 //set selection view
 app.get('/adminPanel',(req,res)=>{
-    res.render('adminPanel',{nav:navlink, title:"Admin Panel"});
+    res.render('adminPanel',{nav:navlink,pageName:pagename, title:"Admin Panel"});
 });
 
 app.get('/addBatsman',(req,res)=>{
-    res.render('addBatsman',{nav:navlink, title:"Add Batsman"});
+    res.render('addBatsman',{nav:navlink,pageName:pagename, title:"Add Batsman"});
 });
 
 app.get('/addBowler',(req,res)=>{
-    res.render('addBowler',{nav:navlink, title:"Add Bowler"});
+    res.render('addBowler',{nav:navlink,pageName:pagename, title:"Add Bowler"});
 })
 //---------------------------------------
 app.listen(process.env.PORT || 3046,()=>{
