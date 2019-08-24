@@ -68,20 +68,19 @@
 <div class="container">
     <!--<div class="row">-->
     <div class="row justify-content-center">
-        <% for(var i = 0; i < batsmans.length; i++){ %>
+        <% for(var i = 0; i < bowlers.length; i++){ %>
             <div class="col-auto mb-3"> 
-                <div class="card" style="width: 18rem; height: 29rem">
+                <div class="card" style="width: 18rem; height: 28rem">
                     <div class="card card-block d-flex" style="height: 250px; border: 0">
                         <div class="card-body align-items-center d-flex justify-content-center">
-                            <img class="card-img-top " style="width: 250px; height: 150 px; border:0;"src = "<%= batsmans[i].imgsrc %>" alt="Card image cap" />
+                            <img class="card-img-top "style="width: 250px; height: 150 px; border:0;" src = "<%= bowlers[i].imgsrc %>" alt="Card image cap" />
                         </div>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title"><%= batsmans[i].name %></h5>
-                        <h6 class="card-subtitle mb-2 text-muted"><%= batsmans[i].country %></h6>
+                        <h5 class="card-title"><%= bowlers[i].name %></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"><%= bowlers[i].country %></h6>
                         <br>
-                        <h5 class="">Rating: <%= batsmans[i].urating %> /10</h5>
-                        <br>
+                        <h5 class="">Rating: <%= bowlers[i].urating %> /10</h5>
                         <a href="" class="btn btn-info">Read more..</a>
                     </div>
                 </div>
