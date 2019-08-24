@@ -1,0 +1,65 @@
+Batsmen
+--------
+[
+	{
+"name":"Sachin Tendulkar",
+"status":"Retired",
+"country":"India",
+"role":"Top-order batsman",
+"style":"Right-hand bat",
+"tmatches":"200",
+"odimatches":"463",
+"t20matches":"1",
+"truns":"15921",
+"odiruns":"18426",
+"t20runs":"10",
+"tavg":"53.78",
+"odiavg":"44.83",
+"t20avg":"10.00",
+"trate":"",
+"odirate":"86.23",
+"t20rate":"83.33",
+"t100":"51",
+"odi100":"49",
+"t20100":"0",
+"imgsrc":"http://media2.intoday.in/indiatoday/images/Photo_gallery/sachin-3_031812120617.jpg"
+"profile":"Sachin Tendulkar has been the most complete batsman of his time, the most prolific runmaker of all time, and arguably the biggest cricket icon the game has ever known. His batting was based on the purest principles: perfect balance, economy of movement, precision in stroke-making, and that intangible quality given only to geniuses - anticipation. If he didn't have a signature stroke - the upright, back-foot punch comes close - it's because he was equally proficient at each of the full range of orthodox shots (and plenty of improvised ones as well) and can pull them out at will."
+}
+]
+------------------------------------------------
+[{"name":"Sachin Tendulkar","status":"Retired","country":"India","role":"Top-order batsman","style":"Right-hand bat","tmatches":"200","odimatches":"463","t20matches":"1","truns":"15921","odiruns":"18426","t20runs":"10","tavg":"53.78","odiavg":"44.83","t20avg":"10.00","trate":"","odirate":"86.23","t20rate":"83.33","t100":"51","odi100":"49","t20100":"0","imgsrc":"http://media2.intoday.in/indiatoday/images/Photo_gallery/sachin-3_031812120617.jpg","profile":"Sachin Tendulkar has been the most complete batsman of his time, the most prolific runmaker of all time, and arguably the biggest cricket icon the game has ever known. His batting was based on the purest principles: perfect balance, economy of movement, precision in stroke-making, and that intangible quality given only to geniuses - anticipation. If he didn't have a signature stroke - the upright, back-foot punch comes close - it's because he was equally proficient at each of the full range of orthodox shots (and plenty of improvised ones as well) and can pull them out at will."}]
+------------------------------------------------
+Bowlers
+--------
+[
+	{
+"name":"Javagal Srinath",
+"status":"Retired",
+"country":"India",
+"style":"Right-arm fast-medium",
+
+"tmatches":"67",
+"odimatches":"229",
+"t20matches":"",
+
+"tballs":"15104",
+"odiballs":"11935",
+"t20balls":"",
+
+"twkts":"236",
+"odiwkts":"315",
+"t20wkts":"",
+
+"trate":"64",
+"odirate":"37.8",
+"t20rate":"",
+
+"tavg":"30.49",
+"odiavg":"28.08",
+"t20avg":"",
+"imgsrc":"https://media.gettyimages.com/photos/may-1999-portrait-of-javagal-srinath-of-india-mandatory-credit-stu-picture-id1202181?s=612x612",
+"profile":"Arguably the nation's fastest-ever bowler, Javagal Srinath heralded a period of awakening for Indian pace bowling, after Kapil Dev's swing had fired popular imagination. And when he retired from international cricket of 11 years in 2003, Srinath was second only to Kapil in number of Test wickets by an Indian paceman."
+	}
+]
+------------------------------------------
+[{"name":"Javagal Srinath","status":"Retired","country":"India","style":"Right-arm fast-medium","tmatches":"67","odimatches":"229","t20matches":"","tballs":"15104","odiballs":"11935","t20balls":"","twkts":"236","odiwkts":"315","t20wkts":"","trate":"64","odirate":"37.8","t20rate":"","tavg":"30.49","odiavg":"28.08","t20avg":"","imgsrc":"https://media.gettyimages.com/photos/may-1999-portrait-of-javagal-srinath-of-india-mandatory-credit-stu-picture-id1202181?s=612x612","profile":"Arguably the nation's fastest-ever bowler, Javagal Srinath heralded a period of awakening for Indian pace bowling, after Kapil Dev's swing had fired popular imagination. And when he retired from international cricket of 11 years in 2003, Srinath was second only to Kapil in number of Test wickets by an Indian paceman."}]

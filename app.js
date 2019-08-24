@@ -7,13 +7,128 @@ var app = new Express();
 
 app.set('view engine', 'ejs');
 app.use(Express.static(__dirname+'/public'));
+app.use(bodyParser.urlencoded({extended:true}));
 
+navlink = [
+    {
+        "title":"Batsmen",
+        "link":"/viewBatsmen"
+    }
+]
 
-Mongoose.connect('mongodb://localhost:27017/cricketDB')
+Mongoose.connect('mongodb://localhost:27017/cricketDB',{ useNewUrlParser: true }, (err, res) => {
+    if (err) throw err;
+    //console.log('Database online');
+    });
 
-app.get('/',(req,res)=>{
-    res.render('index');
+/////////////////////////
+//Define dataschemas here
+const batsmenSchema = Mongoose.model('batsmans',{
+    name:String,
+    status:String,
+    country:String,
+    role:String,
+    style:String,
+    tmatches:String,
+    odimatches:String,
+    t20matches:String,
+    truns:String,
+    odiruns:String,
+    t20runs:String,
+    tavg:String,
+    odiavg:String,
+    t20avg:String,
+    trate:String,
+    odirate:String,
+    t20rate:String,
+    t100:String,
+    odi100:String,
+    t20100:String,
+    imgsrc:String,
+    profile:String
 });
+
+const bowlersSchema = Mongoose.model('bowlers',{
+    name:String,
+    status:String,
+    country:String,
+    style:String,
+    tmatches:String,
+    odimatches:String,
+    t20matches:String,
+    tballs:String,
+    odiballs:String,
+    t20balls:String,
+    wkts:String,
+    odiwkts:String,
+    t20wkts:String,
+    trate:String,
+    odirate:String,
+    t20rate:String,
+    tavg:String,
+    odiavg:String,
+    t20avg:String,
+    imgsrc:String,
+    profile:String
+});
+//////////////////////////
+//save batsmen entriesAPI
+// app.post('/saveBatsman', (req,res)=>{
+//     var item = req.body;
+//     var batsman = batsmenSchema(item);
+//     batsman.save((error,data)=>{
+//         if(error){
+//             throw error;
+//         }else{
+//             res.send('new object created @' + data);
+//         }
+//     })
+// });
+
+//retrieveallbatsmenAPI
+app.get('/retrieveBatsmenAPI',(req,res)=>{
+    var retrieve = batsmenSchema.find((error,data)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else{
+            res.send(data);
+        }
+    })
+});
+
+//Retrieve Batsmen APILInk
+const retrieveBatsmenAPILink = 'http://localhost:3046/retrieveBatsmenAPI'
+
+//retrieveallbatsmenfunctioncall
+app.get('/',(req,res)=>{
+    request(retrieveBatsmenAPILink,(error,response,body)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else {
+            data = JSON.parse(body);
+            console.log(data);
+            res.render('viewBatsmen',{nav:navlink, title: "Batsmen", batsmans:data })
+        }
+    })
+});
+
+app.get('/viewBatsmen',(req,res)=>{
+    request(retrieveBatsmenAPILink,(error,response,body)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else {
+            data = JSON.parse(body);
+            console.log(data);
+            res.render('viewBatsmen',{nav:navlink, title: "Batsmen", batsmans:data })
+        }
+    })
+});
+// app.get('/',(req,res)=>{
+//     res.render('viewBatsmen',{nav:navlink,title:"Batsmen"});
+// });
 
 app.listen(process.env.PORT || 3046,()=>{
     console.log("Server running at http://localhost:3046")
