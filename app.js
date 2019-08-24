@@ -398,7 +398,42 @@ app.post('/updateBowler/:id',(req,res)=>{
         }
     });
     });
+    //////////////
+//set view for search for Delete Bowler
+app.get('/searchForDeleteBowler',(req,res)=>{
+    res.render('searchForDeleteBowler', {nav:navlink, pageName:pagename,title:"Search"});
+});
 
+//Retrieve batsman for edit
+app.post('/retrieveBowlerforDeleteAPI',(req,res)=>{
+    var sname = req.body.sbowler;
+    bowlersSchema.find({name:sname},(error,data)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else{
+            if(data.length < 1){
+                res.send('<script>alert("Searched entry does not exist in Database, please try again!")</script>')
+            }else{
+            res.render('viewBowlerForDelete',{nav:navlink, pageName:pagename,title:"Search", bowler:data});
+        }
+        }
+    })
+});
+
+//delete Batsman
+app.post('/deleteBowler/:id',(req,res)=>{
+    var bowler = req.body;
+    var id = req.params.id;
+    bowlersSchema.remove({_id:id},(error,data)=>{
+        if(error){
+            throw error;
+            res.send (error);
+        }else{
+            res.send('<script>alert("Entry Deleted!")</script>');
+        }
+    });
+    });
 //---------------------------------------------
 //-------Add players to database--------------
 
