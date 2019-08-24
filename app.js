@@ -230,7 +230,43 @@ app.post('/updateBatsman/:id',(req,res)=>{
         }
     });
     });
+//////////////
+//set view for search for Delete Batsman
+app.get('/searchForDeleteBatsman',(req,res)=>{
+    res.render('searchForDeleteBatsman', {nav:navlink, pageName:pagename,title:"Search"});
+});
 
+//Retrieve batsman for edit
+app.post('/retrieveBatsmanforDeleteAPI',(req,res)=>{
+    var sname = req.body.sbatsman;
+    batsmenSchema.find({name:sname},(error,data)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else{
+            if(data.length < 1){
+                res.send('<script>alert("Searched entry does not exist in Database, please try again!")</script>')
+            }else{
+            res.render('viewBatsmanForDelete',{nav:navlink, pageName:pagename,title:"Search", batsman:data});
+        }
+        }
+    })
+});
+
+//delete Batsman
+app.post('/deleteBatsman/:id',(req,res)=>{
+    var batsman = req.body;
+    var id = req.params.id;
+    batsmenSchema.remove({_id:id},(error,data)=>{
+        if(error){
+            throw error;
+            res.send (error);
+        }else{
+            res.send('<script>alert("Entry Deleted!")</script>');
+        }
+    });
+    });
+//--------------------------------------
 
 //--------Save Bowlers-------------------
 //save bowlers entriesAPI
@@ -310,7 +346,7 @@ app.get('/searchForEditBowler',(req,res)=>{
     res.render('searchForEditBowler', {nav:navlink, pageName:pagename,title:"Search"});
 });
 
-//Retrieve batsman for edit
+//Retrieve bowler for edit
 app.post('/retrieveBowlerforEditAPI',(req,res)=>{
     var sname = req.body.sbowler;
     bowlersSchema.find({name:sname},(error,data)=>{
@@ -327,7 +363,7 @@ app.post('/retrieveBowlerforEditAPI',(req,res)=>{
     })
 });
 
-//update Batsman
+//update Bowler
 app.post('/updateBowler/:id',(req,res)=>{
     var bowler = req.body;
     var id = req.params.id;
