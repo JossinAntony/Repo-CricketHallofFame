@@ -20,6 +20,10 @@ navlink = [
     {
         "title":"Admin Panel",
         "link":"/adminPanel"
+    },
+    {
+        "title":"Trial",
+        "link":"/trial"
     }
 ];
 
@@ -168,6 +172,67 @@ app.get('/retrieveBatsman/:id',(req,res)=>{
     })
 });
 
+//set view for search for edit Batsman
+app.get('/searchForEditBatsman',(req,res)=>{
+    res.render('searchForEditBatsman', {nav:navlink, pageName:pagename,title:"Search"});
+});
+
+//Retrieve batsman for edit
+app.post('/retrieveBatsmanforEditAPI',(req,res)=>{
+    var sname = req.body.sbatsman;
+    batsmenSchema.find({name:sname},(error,data)=>{
+        if (error){
+            throw error;
+            res.send(error);
+        }else{
+            if(data.length < 1){
+                res.send('<script>alert("Searched entry does not exist in Database, please try again!")</script>')
+            }else{
+            res.render('viewBatsmanForEdit',{nav:navlink, pageName:pagename,title:"Search", batsman:data});
+        }
+        }
+    })
+});
+
+//update Batsman
+app.post('/updateBatsman/:id',(req,res)=>{
+    var batsman = req.body;
+    var id = req.params.id;
+
+    batsmenSchema.update({_id:id},{$set:{urating:batsman.urating,
+        name:batsman.name,
+        status:batsman.status,
+        country:batsman.country,
+        role:batsman.role,
+        style:batsman.style,
+        tmatches:batsman.tmatches,
+        odimatches:batsman.odimatches,
+        t20matches:batsman.t20matches,
+        truns:batsman.truns,
+        odiruns:batsman.odiruns,
+        t20runs:batsman.t20runs,
+        tavg:batsman.tavg,
+        odiavg:batsman.odiavg,
+        t20avg:batsman.t20avg,
+        trate:batsman.trate,
+        odirate:batsman.odirate,
+        t20rate:batsman.t20rate,
+        t100:batsman.t100,
+        odi100:batsman.odi100,
+        t20100:batsman.t20100,
+        imgsrc:batsman.imgsrc,
+        profile:batsman.profile
+    }},(error,data)=>{
+        if(error){
+            throw error;
+            res.send (error);
+        }else{
+            res.send('<script>alert("Entry updated!")</script>');
+        }
+
+    });
+    });
+
 
 //--------Save Bowlers-------------------
 //save bowlers entriesAPI
@@ -257,6 +322,17 @@ app.get('/addBowler',(req,res)=>{
     res.render('addBowler',{nav:navlink,pageName:pagename, title:"Add Bowler"});
 })
 //---------------------------------------
+//-----trial--------------------
+app.get('/trial',(req,res)=>{
+    res.render('trial',{nav:navlink,pageName:pagename, title:"Trial", value:{'title':'placeholdervalue'}});
+});
+
+app.post('/trialaction',(req,res)=>{
+    var item = req.body;
+    //console.log(item);
+});
+
+//-----------------------------
 app.listen(process.env.PORT || 3046,()=>{
     console.log("Server running at http://localhost:3046")
 });
