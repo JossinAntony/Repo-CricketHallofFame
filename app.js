@@ -452,7 +452,7 @@ app.get('/addBowler',(req,res)=>{
 //---------------------------------------
 //-----trial--------------------
 app.get('/trial',(req,res)=>{
-    res.render('trial',{nav:navlink,pageName:pagename, title:"Trial", value:{'title':'placeholdervalue'}});
+    res.render('trial',{nav:navlink,pageName:pagename,Rating:{rating:'3'}, title:"Trial", value:{'title':'placeholdervalue'}});
 });
 
 app.post('/trialaction',(req,res)=>{

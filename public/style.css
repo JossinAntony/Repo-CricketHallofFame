@@ -31,3 +31,7 @@ p
 {
     font-size: 15px;
 }
+
+.fixed{
+    pointer-events: none;
+}

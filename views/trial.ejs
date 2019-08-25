@@ -19,13 +19,16 @@
 <script src="/rater.js" charset="utf-8"></script>
 <link href= "style.css" rel="stylesheet">
 
+<script>var rating = "<%= Rating.rating %>"</script>
 <script>
+    
+
     $(document).ready(function(){
         var options = {
             max_value: 5,
             step_size: 0.5,
             selected_symbol_type: 'utf8_star',
-            initial_value: 0.5,
+            initial_value: rating,
             //update_input_field_name: $("#input2"),
         }
         
@@ -74,6 +77,7 @@
     <button class="button btn-info" type="submit">Save</button>
     </form> -->
     <div class="rate2"></div>
+    <div class="rate2 fixed"></div>
     <!-- <input id="input2" type="text"> -->
     
 </body>
