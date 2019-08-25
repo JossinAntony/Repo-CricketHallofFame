@@ -516,14 +516,25 @@ app.post('/submitRatingBatsman',(req,res)=>{
             //res.send('<script>alert("Entry updated!")</script>');
         }
     });
-
-
-
-
-
     res.send({status:'status', data:'data', xhr:'xhr'});
 });
 
+app.post('/submitRatingBowler',(req,res)=>{
+    var data = req.body;
+    var star = data.sRating;
+    var id = data.id;
+    console.log(star);
+    console.log(id);
+    bowlersSchema.update({_id:id},{$set:{urating:star}},(error,data)=>{
+        if(error){
+            throw error;
+            res.send (error);
+        }else{
+            //res.send('<script>alert("Entry updated!")</script>');
+        }
+    });
+    res.send({status:'status', data:'data', xhr:'xhr'});
+});
 
 //-----------------------------
 app.listen(process.env.PORT || 3046,()=>{

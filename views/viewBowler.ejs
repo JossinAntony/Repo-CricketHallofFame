@@ -17,7 +17,7 @@
     <script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
 
     <script src="/rater.js" charset="utf-8"></script>
-    <link href= "style.css" rel="stylesheet">
+    <link href= "/style.css" rel="stylesheet">
     <!------------>
     <style>
         .card-img-top {
@@ -38,6 +38,29 @@
         //         'json'); // response data format
         //     console.log(data.from, data.to);
         // });
+
+        $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+            console.log("This is a custom error event");
+        });
+
+        $(".rate2").rate("setAdditionalData", {id: 42});
+        $(".rate2").on("updateSuccess", function(ev, data){
+            console.log(data);
+        });
+    });
+</script>
+<!-- Script for star rating -->
+    
+<script>
+    $(document).ready(function(){
+        $(".rate2").on("change", function(ev, data){
+            $.post('/submitRatingBowler',  // url
+                { sRating: data.to, id:id}, // data to be submit
+                function(data, status, xhr) {   // success callback function
+                },
+                'json'); // response data format
+            console.log(data.from, data.to);
+        });
 
         $(".rate2").on("updateError", function(ev, jxhr, msg, err){
             console.log("This is a custom error event");
@@ -111,8 +134,12 @@
                             <h6 class="card-subtitle mb-2 text-muted">Country: <%= bowler[i].country %></h6>
                             <table class="table-borderless">
                                 <tr>
-                                <td valign="top"><b>Rating:</b></td>
-                                <td text-align="center"><%= bowler[i].urating %> /10</td>
+                                    <td valign="top"><b>Rating:</b></td>
+                                    <td text-align="center"><div class="rate2 fixed"></div></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Give your Rating:</b></td>
+                                    <td text-align="center"><div class="rate2"></div></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><b>Status:</b></td>
@@ -175,6 +202,20 @@
                             </table>
                         </div>
                     </div>
+<!-- Script for star rating -->
+<script> 
+        var rating = "<%= bowler[i].urating %>";
+        var id = "<%= bowler[i]._id %>";
+        
+        var options = {
+            max_value: 5,
+            step_size: 0.5,
+            selected_symbol_type: 'utf8_star',
+            initial_value: rating,
+        };
+        $(".rate2").rate(options); 
+    </script>
+<!----------------- --> 
                 <% } %>
             </div>
     </div>
