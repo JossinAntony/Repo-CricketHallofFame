@@ -460,6 +460,17 @@ app.post('/trialaction',(req,res)=>{
     //console.log(item);
 });
 
+
+app.post('/submitJSONData',(req,res)=>{
+    var data = req.body;
+    console.log(data);
+    res.send({status:'status', data:'data', xhr:'xhr'});
+})
+
+
+
+
+
 //-----------------------------
 app.listen(process.env.PORT || 3046,()=>{
     console.log("Server running at http://localhost:3046")
