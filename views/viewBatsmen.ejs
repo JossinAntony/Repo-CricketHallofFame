@@ -20,6 +20,114 @@
         }
     </style>
     <title><%= title %></title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="rater.js" charset="utf-8"></script>
+    <script>
+        $(document).ready(function(){
+            var options = {
+                max_value: 5,
+                step_size: 0.5,
+                selected_symbol_type: 'utf8_star',
+                initial_value: 0.5,
+                update_input_field_name: $("#input2"),
+            }
+            
+            $(".rate2").rate(options);
+
+            $(".rate2").on("change", function(ev, data){
+                console.log(data.from, data.to);
+            });
+
+            $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+                console.log("This is a custom error event");
+            });
+
+            $(".rate2").rate("setAdditionalData", {id: 42});
+            $(".rate2").on("updateSuccess", function(ev, data){
+                console.log(data);
+            });
+        });
+    </script>
+
+    <style>
+        .rate-base-layer
+        {
+            color: #aaa;
+        }
+        .rate-hover-layer
+        {
+            color: orange;
+        }
+        .rate2
+        {
+            font-size: 35px;
+        }
+        .rate2 .rate-hover-layer
+        {
+            color: #aaa;
+        }
+        .rate2 .rate-select-layer
+        {
+            color: orange;
+        }
+
+        #rate5 .rate-base-layer span, #rate7 .rate-base-layer span
+        {
+            opacity: 0.5;
+        }
+        hr
+        {
+            border: 1px solid #ccc;
+        }
+        p
+        {
+            font-size: 15px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">

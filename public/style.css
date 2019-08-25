@@ -1,0 +1,33 @@
+.rate-base-layer
+{
+    color: #aaa;
+}
+.rate-hover-layer
+{
+    color: orange;
+}
+.rate2
+{
+    font-size: 35px;
+}
+.rate2 .rate-hover-layer
+{
+    color: #aaa;
+}
+.rate2 .rate-select-layer
+{
+    color: orange;
+}
+
+#rate5 .rate-base-layer span, #rate7 .rate-base-layer span
+{
+    opacity: 0.5;
+}
+hr
+{
+    border: 1px solid #ccc;
+}
+p
+{
+    font-size: 15px;
+}
