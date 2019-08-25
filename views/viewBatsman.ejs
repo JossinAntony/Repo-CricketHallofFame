@@ -12,6 +12,13 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!-- star rating links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+
+    <script src="/rater.js" charset="utf-8"></script>
+    <link href= "/style.css" rel="stylesheet">
+    <!------------>
     <style>
         .card-img-top {
             width: 100%;
@@ -19,6 +26,29 @@
             object-fit: cover;
         }
         </style>
+<!-- Script for star rating -->
+    <script>
+        $(document).ready(function(){
+            $(".rate2").on("change", function(ev, data){
+                $.post('/submitRatingBatsman',  // url
+                    { sRating: data.to, id:id}, // data to be submit
+                    function(data, status, xhr) {   // success callback function
+                    },
+                    'json'); // response data format
+                console.log(data.from, data.to);
+            });
+    
+            $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+                console.log("This is a custom error event");
+            });
+    
+            $(".rate2").rate("setAdditionalData", {id: 42});
+            $(".rate2").on("updateSuccess", function(ev, data){
+                console.log(data);
+            });
+        });
+    </script>
+<!---------------------------------------->
     <title><%= title %></title>
 </head>
 <body>
@@ -37,20 +67,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="<%= nav[i].link %>"><%= nav[i].title %></a>
             </li>
-            <!--<li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>-->
         <% } %>
         </ul>
       
@@ -81,7 +97,11 @@
                             <table class="table-borderless">
                                 <tr>
                                 <td valign="top"><b>Rating:</b></td>
-                                <td text-align="center"><%= batsman[i].urating %> /10</td>
+                                <td text-align="center"><div class="rate2 fixed"></div></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Give your Rating:</b></td>
+                                    <td text-align="center"><div class="rate2"></div></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><b>Status:</b></td>
@@ -148,6 +168,20 @@
                             </table>
                         </div>
                     </div>
+<!-- Script for star rating -->
+                    <script> 
+                        var rating = "<%= batsman[i].urating %>";
+                        var id = "<%= batsman[i]._id %>";
+                        console.log(rating);
+                        var options = {
+                            max_value: 5,
+                            step_size: 0.5,
+                            selected_symbol_type: 'utf8_star',
+                            initial_value: rating,
+                        };
+                        $(".rate2").rate(options); 
+                    </script>
+<!----------------- -->     
                 <% } %>
             </div>
     </div>

@@ -15,6 +15,7 @@
     <!-- star rating links -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+
     <script src="/rater.js" charset="utf-8"></script>
     <link href= "style.css" rel="stylesheet">
     <!------------>
@@ -26,18 +27,17 @@
         }
     </style>
     <!-- Script for star rating -->
-    
     <script>
         $(document).ready(function(){
         
-            $(".rate2").on("change", function(ev, data){
-                $.post('/submitJSONData',  // url
-                    { myData: data.to}, // data to be submit
-                    function(data, status, xhr) {   // success callback function
-                    },
-                    'json'); // response data format
-                console.log(data.from, data.to);
-            });
+            // $(".rate2").on("change", function(ev, data){
+            //     $.post('/submitJSONData',  // url
+            //         { myData: data.to}, // data to be submit
+            //         function(data, status, xhr) {   // success callback function
+            //         },
+            //         'json'); // response data format
+            //     console.log(data.from, data.to);
+            // });
     
             $(".rate2").on("updateError", function(ev, jxhr, msg, err){
                 console.log("This is a custom error event");
@@ -51,24 +51,6 @@
     </script>
     <!---------------------------------------->
     <title><%= title %></title>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -117,14 +99,7 @@
 <div class="container">
     <!--<div class="row">-->
     <div class="row justify-content-center">
-
-
         <% for(var i = 0; i < batsmans.length; i++){ %>
-         
-         
-         
-
-           
             <div class="col-auto mb-3"> 
                 <div class="card" style="width: 18rem; height: 32rem">
                     <div class="card card-block d-flex" style="height: 250px; border: 0">
@@ -139,11 +114,10 @@
                         <h5 class="">Rating: <div class="rate2 fixed"></div></h5>
                         <br>
                         <a href="/retrieveBatsman/<%= batsmans[i]._id  %>" class="btn btn-info" type="submit">Read more..</a>
-
-
                     </div>
                 </div>
             </div>
+<!-- Script for star rating -->
             <script> 
                 var rating = "<%= batsmans[i].urating %>";
                 console.log(rating);
@@ -155,6 +129,7 @@
                 };
                 $(".rate2").rate(options); 
             </script>
+<!----------------- -->            
         <% } %>
     </div>
 </div>

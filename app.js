@@ -500,15 +500,29 @@ app.post('/trialaction',(req,res)=>{
     //console.log(item);
 });
 
+//update user rating API
 
-app.post('/submitJSONData',(req,res)=>{
+app.post('/submitRatingBatsman',(req,res)=>{
     var data = req.body;
-    console.log(data);
+    var star = data.sRating;
+    var id = data.id;
+    console.log(star);
+    console.log(id);
+    batsmenSchema.update({_id:id},{$set:{urating:star}},(error,data)=>{
+        if(error){
+            throw error;
+            res.send (error);
+        }else{
+            //res.send('<script>alert("Entry updated!")</script>');
+        }
+    });
+
+
+
+
+
     res.send({status:'status', data:'data', xhr:'xhr'});
-})
-
-
-
+});
 
 
 //-----------------------------
