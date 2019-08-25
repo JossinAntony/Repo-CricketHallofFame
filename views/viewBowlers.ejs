@@ -12,6 +12,13 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!-- star rating links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+
+    <script src="/rater.js" charset="utf-8"></script>
+    <link href= "style.css" rel="stylesheet">
+    <!------------>
     <style>
         .card-img-top {
             width: 100%;
@@ -19,6 +26,30 @@
             object-fit: cover;
         }
     </style>
+    <!-- Script for star rating -->
+    <script>
+        $(document).ready(function(){
+        
+            // $(".rate2").on("change", function(ev, data){
+            //     $.post('/submitJSONData',  // url
+            //         { myData: data.to}, // data to be submit
+            //         function(data, status, xhr) {   // success callback function
+            //         },
+            //         'json'); // response data format
+            //     console.log(data.from, data.to);
+            // });
+    
+            $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+                console.log("This is a custom error event");
+            });
+    
+            $(".rate2").rate("setAdditionalData", {id: 42});
+            $(".rate2").on("updateSuccess", function(ev, data){
+                console.log(data);
+            });
+        });
+    </script>
+    <!---------------------------------------->
     <title><%= title %></title>
 </head>
 <body>
@@ -70,7 +101,7 @@
     <div class="row justify-content-center">
         <% for(var i = 0; i < bowlers.length; i++){ %>
             <div class="col-auto mb-3"> 
-                <div class="card" style="width: 18rem; height: 28rem">
+                <div class="card" style="width: 18rem; height: 32rem">
                     <div class="card card-block d-flex" style="height: 250px; border: 0">
                         <div class="card-body align-items-center d-flex justify-content-center">
                             <img class="card-img-top "style="width: 250px; height: 150 px; border:0;" src = "<%= bowlers[i].imgsrc %>" alt="Card image cap" />
@@ -80,11 +111,24 @@
                         <h5 class="card-title"><%= bowlers[i].name %></h5>
                         <h6 class="card-subtitle mb-2 text-muted"><%= bowlers[i].country %></h6>
                         <br>
-                        <h5 class="">Rating: <%= bowlers[i].urating %> /10</h5>
+                        <h5 class="">Rating: <div class="rate2 fixed"></div></h5>
                         <a href="/retrieveBowler/<%= bowlers[i]._id %>" class="btn btn-info">Read more..</a>
                     </div>
                 </div>
             </div>
+<!-- Script for star rating -->
+    <script> 
+        var rating = "<%= bowlers[i].urating %>";
+        console.log(rating);
+        var options = {
+            max_value: 5,
+            step_size: 0.5,
+            selected_symbol_type: 'utf8_star',
+            initial_value: rating,
+        };
+        $(".rate2").rate(options); 
+    </script>
+<!----------------- --> 
         <% } %>
     </div>
 </div>

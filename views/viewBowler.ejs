@@ -12,6 +12,13 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!-- star rating links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+
+    <script src="/rater.js" charset="utf-8"></script>
+    <link href= "style.css" rel="stylesheet">
+    <!------------>
     <style>
         .card-img-top {
             width: 100%;
@@ -19,6 +26,30 @@
             object-fit: cover;
         }
         </style>
+        <!-- Script for star rating -->
+    <script>
+    $(document).ready(function(){
+    
+        // $(".rate2").on("change", function(ev, data){
+        //     $.post('/submitJSONData',  // url
+        //         { myData: data.to}, // data to be submit
+        //         function(data, status, xhr) {   // success callback function
+        //         },
+        //         'json'); // response data format
+        //     console.log(data.from, data.to);
+        // });
+
+        $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+            console.log("This is a custom error event");
+        });
+
+        $(".rate2").rate("setAdditionalData", {id: 42});
+        $(".rate2").on("updateSuccess", function(ev, data){
+            console.log(data);
+        });
+    });
+</script>
+<!---------------------------------------->
     <title><%= title %></title>
 </head>
 <body>
