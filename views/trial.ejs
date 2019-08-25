@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+<script src="/rater.js" charset="utf-8"></script>
+<link href= "style.css" rel="stylesheet">
+
+
+<script>
+    $(document).ready(function(){
+
+        
+        
+
+        $(".rate2").on("change", function(ev, data){
+            $.post('/submitJSONData',  // url
+                { myData: data.to}, // data to be submit
+                function(data, status, xhr) {   // success callback function
+                    console.log(data);
+                    console.log(status);
+                    console.log(xhr);
+                },
+                'json'); // response data format
+            console.log(data.from, data.to);
+        });
+
+        $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+            console.log("This is a custom error event");
+        });
+
+        $(".rate2").rate("setAdditionalData", {id: 42});
+        $(".rate2").on("updateSuccess", function(ev, data){
+            console.log(data);
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    <title><%= title %></title>
+</head>
+<body>
+
+    <!-- <form action="/trialaction" method="POST">
+    <input type="text" name="input" id="input"> </input>
+    <script>document.getElementById("input").defaultValue = "Goofy"</script>
+    <button class="button btn-info" type="submit">Save</button>
+    </form> -->
+    <!-- <div class="rate2"></div>
+    <div class="rate2 fixed"></div> -->
+    <!-- <% for(var i = 0; i < 1; i++){ %>
+        <script>var rating = "<%= Rating.rating %>"</script>
+    <%}%> -->
+    <script>
+            var rating = "<%= Batsman[0].urating %>"
+            var options = {
+                max_value: 5,
+                step_size: 0.5,
+                selected_symbol_type: 'utf8_star',
+                initial_value: rating,
+            }
+            $(".rate2").rate(options);
+        </script>
+        <div class="rate2 fixed"></div> 
+
+    <% for(var i = 2; i < Batsman.length; i++){ %>
+        <script>
+            var rating = "<%= Batsman[i].urating %>"
+            var options = {
+                max_value: 5,
+                step_size: 0.5,
+                selected_symbol_type: 'utf8_star',
+                initial_value: rating,
+            }
+            $(".rate2").rate(options);
+        </script>
+        <h5><%= Batsman[i].name %></h5>
+        <div class="rate2 fixed"></div>
+    <%}%> 
+
+    
+
+    
+</body>
+</html>

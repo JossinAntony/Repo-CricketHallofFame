@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- star rating links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+
+    <script src="/rater.js" charset="utf-8"></script>
+    <link href= "/style.css" rel="stylesheet">
+    <!------------>
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+        </style>
+        <!-- Script for star rating -->
+    <script>
+    $(document).ready(function(){
+    
+        // $(".rate2").on("change", function(ev, data){
+        //     $.post('/submitJSONData',  // url
+        //         { myData: data.to}, // data to be submit
+        //         function(data, status, xhr) {   // success callback function
+        //         },
+        //         'json'); // response data format
+        //     console.log(data.from, data.to);
+        // });
+
+        $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+            console.log("This is a custom error event");
+        });
+
+        $(".rate2").rate("setAdditionalData", {id: 42});
+        $(".rate2").on("updateSuccess", function(ev, data){
+            console.log(data);
+        });
+    });
+</script>
+<!-- Script for star rating -->
+    
+<script>
+    $(document).ready(function(){
+        $(".rate2").on("change", function(ev, data){
+            $.post('/submitRatingBowler',  // url
+                { sRating: data.to, id:id}, // data to be submit
+                function(data, status, xhr) {   // success callback function
+                },
+                'json'); // response data format
+            console.log(data.from, data.to);
+        });
+
+        $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+            console.log("This is a custom error event");
+        });
+
+        $(".rate2").rate("setAdditionalData", {id: 42});
+        $(".rate2").on("updateSuccess", function(ev, data){
+            console.log(data);
+        });
+    });
+</script>
+<!---------------------------------------->
+    <title><%= title %></title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="/main"><h3><em><%= pagename.pagename %></em></h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        <!--<li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>-->
+        <% for(var i= 0; i < nav.length; i++){ %>
+            <li class="nav-item">
+                <a class="nav-link" href="<%= nav[i].link %>"><%= nav[i].title %></a>
+            </li>
+            <!--<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>-->
+        <% } %>
+        </ul>
+      
+      <!-- <form class="form-inline my-2 my-lg-0" action="" method="POST">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="sname">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+      
+    </div>
+    
+  </nav>
+
+<!--<div class="container-fluid mt-4">-->
+    <br><br><br>
+<div class="container">
+    <div class="row justify-content-center">
+            <div class="col-auto mb-3"> 
+                <% for(var i=0; i < bowler.length; i++) { %>
+                    <div class="card">
+                        <div class="card card-block d-flex" style="height: 250px; border: 0">
+                            <div class="card-body align-items-center d-flex justify-content-center">
+                                <img class="card-img-top " src = "<%= bowler[i].imgsrc %>" alt="Card image cap" style="width: 300px; height: 300 px; border:0;"/>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title"><%= bowler[i].name %></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Country: <%= bowler[i].country %></h6>
+                            <table class="table-borderless">
+                                <tr>
+                                    <td valign="top"><b>Rating:</b></td>
+                                    <td text-align="center"><div class="rate2 fixed"></div></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Give your Rating:</b></td>
+                                    <td text-align="center"><div class="rate2"></div></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Status:</b></td>
+                                    <td text-align="center"><%= bowler[i].status %></td>
+                                </tr>
+                                <tr>
+                                    <td valign="top"><b>Player style:</b></td>
+                                    <td text-align="center"><%= bowler[i].style %></td>
+                                </tr>
+                            </table>
+                        <br>
+                            <table class="table table-striped table-info">
+                                <thead class="table-dark"> <!--bg-primary, success, warning, danger, info-->
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Matches played</th>
+                                        <th>Balls bowled</th>
+                                        <th>Wickets taken</th>
+                                        <th>Bowling rate</th>
+                                        <th>Bowling average</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr>
+                                        <td>Test</td>
+                                        <td> <%= bowler[i].tmatches %></td>
+                                        <td> <%= bowler[i].tballs %></td>
+                                        <td> <%= bowler[i].twkts %></td>
+                                        <td> <%= bowler[i].trate %></td>
+                                        <td> <%= bowler[i].tavg %></td>
+                                    </tr>
+                                    <tr>
+                                            <td>ODI</td>
+                                            <td> <%= bowler[i].odimatches %></td>
+                                            <td> <%= bowler[i].odiballs %></td>
+                                            <td> <%= bowler[i].odiwkts %></td>
+                                            <td> <%= bowler[i].odirate %></td>
+                                            <td> <%= bowler[i].odiavg %></td>
+                                        </tr>
+                                        <tr>
+                                                <td>T20</td>
+                                                <td> <%= bowler[i].t20matches %></td>
+                                                <td> <%= bowler[i].t20balls %></td>
+                                                <td> <%= bowler[i].t20wkts %></td>
+                                                <td> <%= bowler[i].t20rate %></td>
+                                                <td> <%= bowler[i].t20avg %></td>
+                                            </tr>
+                                </tbody>
+                            </table>
+                            <table border="0" width="100%" ID="">
+                                <tr style="background-color:yellowgreen;color:white;">
+                                    <td><h3><em><b>Profile</b></em></h3></td>
+                                </tr>
+                            </table>
+                            <table border="0" width="100%" ID="">
+                                <tr style="background-color:#f2f2f2;color:black;">
+                                    <td><em><br>"<%= bowler[i].profile %>"</em></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+<!-- Script for star rating -->
+<script> 
+        var rating = "<%= bowler[i].urating %>";
+        var id = "<%= bowler[i]._id %>";
+        
+        var options = {
+            max_value: 5,
+            step_size: 0.5,
+            selected_symbol_type: 'utf8_star',
+            initial_value: rating,
+        };
+        $(".rate2").rate(options); 
+    </script>
+<!----------------- --> 
+                <% } %>
+            </div>
+    </div>
+</div>
+
+</body>
+</html>

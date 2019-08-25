@@ -1,0 +1,9 @@
+login panel-
+--------------------
+- there should be options for normal login and sign up. 
+- For login compare user name and password in data base and allow login if they match, give prompt if they do not match.
+- For sign up, save the username and password in database, we can also have a confirm password field in sign up page to make it more interesting (the passwords in these fields should match).
+- For a new username we have to confirm that it does not already exist in the database, if it already exists,, there should be a prompt like name exist, take another name etc. 
+- FOr username admin, there should be some sort of flag- an indicator which says if the logged in person is the admin, this is because, many functions like add, delete, replace etc should be available only to the admin.
+Main page
+----------------------

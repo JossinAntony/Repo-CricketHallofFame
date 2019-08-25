@@ -1,0 +1,553 @@
+Batsmen
+--------
+/* 1 */
+{
+    "_id" : ObjectId("5d60c1c6c3ce5f021bfac930"),
+    "name" : "Sachin Tendulkar",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "India",
+    "role" : "Top-order batsman",
+    "style" : "Right-hand bat",
+    "tmatches" : "200",
+    "odimatches" : "463",
+    "t20matches" : "1",
+    "truns" : "15921",
+    "odiruns" : "18426",
+    "t20runs" : "10",
+    "tavg" : "53.78",
+    "odiavg" : "44.83",
+    "t20avg" : "10",
+    "trate" : "",
+    "odirate" : "86.23",
+    "t20rate" : "83.33",
+    "t100" : "51",
+    "odi100" : "49",
+    "t20100" : "0",
+    "imgsrc" : "https://www.sportsindiashow.com/wp-content/uploads/2019/05/sachin-tendulkar-1556110391.jpg",
+    "profile" : "Sachin Tendulkar has been the most complete batsman of his time, the most prolific runmaker of all time, and arguably the biggest cricket icon the game has ever known. His batting was based on the purest principles: perfect balance, economy of movement, precision in stroke-making, and that intangible quality given only to geniuses - anticipation. If he didn't have a signature stroke - the upright, back-foot punch comes close - it's because he was equally proficient at each of the full range of orthodox shots (and plenty of improvised ones as well) and can pull them out at will.  There were no apparent weaknesses in Tendulkar's game. He could score all around the wicket, off both front foot and back, could tune his technique to suit every condition, temper his game to suit every situation, and made runs in all parts of the world in all conditions.  Some of his finest performances came against Australia, the overwhelmingly dominant team of his era. His century as a 19-year-old on a lightning-fast pitch at the WACA is considered one of the best innings ever to have been played in Australia. A few years later he received the ultimate compliment from the ultimate batsman: Don Bradman confided to his wife that Tendulkar reminded him of himself.  Blessed with the keenest of cricket minds, and armed with a loathing for losing, Tendulkar set about doing what it took to become one of the best batsmen in the world. His greatness was established early: he was only 16 when he made his Test debut. He was hit on the mouth by Waqar Younis but continued to bat, in a blood-soaked shirt. His first Test hundred, a match-saving one at Old Trafford, came when he was 17, and he had 16 Test hundreds before he turned 25. In 2000 he became the first batsman to have scored 50 international hundreds, in 2008 he passed Brian Lara as the leading Test run-scorer, and in the years after, he went past 13,000 Test runs 30,000 international runs, and 50 Test hundreds.  He currently holds the record for most hundreds in both Tests and ODIs - remarkable, considering he didn't score his first ODI hundred till his 79th match. Incredibly, he retained a divine enthusiasm for the game till his last match. At 36 years and 306 days he broke a 40-year-old barrier by scoring the first double-century in one-day cricket. In 2012, when just one month short of his 39th birthday, he became the first player to score 100 international centuries, which like Bradman's batting average, could be a mark that lasts for ever. Later that year, though, he announced his retirement from ODIs after a disappointing 18 months in international cricket. And on November 16, 2013, Tendulkar retired from Test cricket after a memorable 200th Test, on his home ground at the Wankhede Stadium against West Indies.  Tendulkar's considerable achievements seem greater still when looked at in the light of the burden of expectations he had to bear from his adoring but somewhat unreasonable followers, who have been prone to regard anything less than a hundred in each innings as a failure. The aura may have dimmed, if only slightly, as the years on the international circuit took their toll on the body, but Tendulkar remains, by a distance, the most worshipped cricketer in the world. "
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5d60ff48918f5d51e4266e55"),
+    "name" : "Mahendra Singh Dhoni",
+    "urating" : "",
+    "status" : "Active",
+    "country" : "India",
+    "role" : "Wicketkeeper batsman",
+    "style" : "Right-hand bat",
+    "tmatches" : "90",
+    "odimatches" : "350",
+    "t20matches" : "98",
+    "truns" : "4876",
+    "odiruns" : "10773",
+    "t20runs" : "1617",
+    "tavg" : "38.09",
+    "odiavg" : "50.57",
+    "t20avg" : "37.60",
+    "trate" : "59.11",
+    "odirate" : "87.56",
+    "t20rate" : "126.13",
+    "t100" : "6",
+    "odi100" : "10",
+    "t20100" : "0",
+    "imgsrc" : "https://english.cdn.zeenews.com/sites/default/files/2019/07/13/803174-msd-1.jpg",
+    "profile" : "Barring Sachin Tendulkar, MS Dhoni is arguably the most popular and definitely the most scrutinised cricketer from India. He has done so coming from the cricketing backwaters, the mining state of Jharkhand, and through a home-made batting and wicketkeeping technique, and a style of captaincy that scales the highs and lows of both conservatism and unorthodoxy. Under Dhoni's captaincy, India have won the top prize in all formats: the No.1 Test ranking for 18 months starting December 2009, the 50-over World Cup in 2011 and the World Twenty20 on his captaincy debut in 2007. Dhoni, then a ticket inspector with the Indian Railways, had escaped all attention bar the odd whisper among the followers of club cricket in Kolkata until he was 23 when he blasted two centuries in a triangular 50-over tournament for India A in Nairobi in 2004. Long-haired and fearless, he soon swaggered into international cricket, and became an instant darling of the crowds with ODI innings of 148 and 183 within a year of his debut.  Dhoni demonstrated all that was right with the new middle-class India. He didn't respect reputations, but never disrespected. He improvised, he learned, but didn't make an apology about his batting style, which was not the most elegant. He still batted with low, hockey hands, he still didn't look elegant but became a multi-faceted ODI batsman, one who could accumulate, one who could rebuild, and one who could still unleash those big sixes.  Along the way Dhoni showed leadership skills, which were recognised when Rahul Dravid gave up captaincy in 2007. Just before that announcement from Dravid, Dhoni had taken a bunch of kids to South Africa and was leading India to a World Cup win in a format the country didn't even take seriously. The ODI captaincy was natural progression, and Anil Kumble just kept the seat warm in Tests for a year.  Dhoni brought to captaincy a thick skin and relative indifference to results that an Indian captain needs to keep the job for long. Along with coach Gary Kirsten, he put his senior performers in a comfortable place, and they returned the favour with some of their best years in international cricket. His calmness on the field helped and worked like a charm in the shorter formats, although tactically he sometimes sat back for too long in Tests. All that can't argue against the fact that India had some of their best years in Test cricket, in terms of tangible achievement, under Dhoni, and that Dhoni has for years been among the best few ODI batsmen in the world.  However, post the 50-over World Cup win in 2011, which Dhoni sealed with a timely 91 and his patented helicopter shot, reality struck, and an ageing team kept losing in unfamiliar conditions. After eight straight Test losses away from home, Dhoni the captain came under immense pressure, which was accentuated by a 2-1 home series loss to England in 2012-13, the first time India had lost at home in more than eight years. This brought out a new chapter in Dhoni's career wherein he seemed more assertive as a captain, started building a new team, played his best Test innings on a turner to win India the Chennai Test against Australia, and became the first captain to lead India to win four wins in a series.  Away from home in the winter of 2013-14, India lost Test series in South Africa and New Zealand by 1-0 margins that did not reflect how close they came close to wins on both tours. The England tour of 2014 began promisingly, with a drawn first Test followed by a historic win at Lord's, but India crashed to earth immediately afterwards to lose the series 3-1. At Old Trafford and The Oval, with the batting crumbling around him, Dhoni played a couple of his bravest innings in Tests, dealing with the seam movement and bounce by stepping down the pitch and taking blows on his body. Wins once again proved elusive on the tour of Australia that followed, though India competed ferociously thanks to a young batting core led by Virat Kohli.   Kohli had captained the side in the first Test, with Dhoni injured, and he would lead them in the fourth and final Test too, with Dhoni making a surprise announcement after the third Test in Melbourne that he was retiring from the longest format. Though his game was not as suited to Tests as it was to limited-overs cricket, Dhoni ended his career in whites with a proud record for a wicketkeeper, with 4876 runs at an average of just over 38, and six hundreds. He had also captained India to more Test wins - 27 - than anyone else.   Dhoni continued to lead India in the shorter formats, and they shrugged off a win-less tour of Australia by reaching the semi-finals of the 2015 World Cup. A year later, they won the Asia Cup T20 in Bangladesh but exited the World T20 in the semi-finals, at home. Dhoni enjoyed a good tournament as a finisher, scoring 89 runs while only being dismissed once in five innings; he showed electric reflexes while keeping to the spinners and indicated he could yet play on till the 2019 World Cup, though he gave up the limited-overs captaincy in January 2017.  Dhoni has also found a new home in the IPL, having been the face of the Chennai Super Kings franchise for the first eight seasons of the tournament, leading them to two titles and four runner-up finishes. He became so deeply associated with the city that he even became a co-owner of a Chennai-based football franchise. But in 2016, with Super Kings suspended for two seasons, he became the first player signed up by the new franchise Rising Pune Supergiants.",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5d61052ced36dc580cc63f73"),
+    "name" : "Brian Lara",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "West Indies",
+    "role" : "Top-order Batsman",
+    "style" : "Left-hand bat",
+    "tmatches" : "131",
+    "odimatches" : "299",
+    "t20matches" : "",
+    "truns" : "11953",
+    "odiruns" : "10405",
+    "t20runs" : "",
+    "tavg" : "52.88",
+    "odiavg" : "40.48",
+    "t20avg" : "",
+    "trate" : "60.51",
+    "odirate" : "79.51",
+    "t20rate" : "",
+    "t100" : "34",
+    "odi100" : "19",
+    "t20100" : "",
+    "imgsrc" : "http://p.imgci.com/db/PICTURES/CMS/249300/249315.jpg",
+    "profile" : "The 10th of 11 children, Brian Lara learnt his game at the Harvard Coaching Clinic, where he was enrolled at the age of six, and although at school he played for Trinidad's junior football and table tennis side, it was cricket which really drew him. Aged 14, he made 745 runs at 126.16, earning him selection for the Trinidad Under-16 team. A year later he was in the West Indies Under-19 side. In 1990, aged 20, Lara became Trinidad and Tobago's youngest captain, leading them to victory in the Geddes Grant Shield. In that year he made his Test debut, scoring 44 and 6 against Pakistan.  No-one since Bradman has built massive scores as often and as fast as Lara in his pomp. Even his stance was thrilling - the bat raised high in the air, the weight poised on a bent front knee, the eyes low and level. Then the guillotine would fall, sending the ball flashing to the boundary. In the space of two months in 1994, Lara's 375 and 501 not out broke world records for the highest Test and first-class scores, but sudden fame turned him into a confused and contradictory figure. During an inventive but largely fruitless spell as captain of a fading team, Lara reiterated his genius by single-handedly defying the 1998-99 Australian tourists with a sequence of 213, 8, 153 not out and 100. For a while, excess weight and hamstring problems hampered his once-lightning footwork, and the torrent of runs became an occasional spurt. But after Garry Sobers suggested a tweak to his flourishing backlift, Lara returned to his best in Sri Lanka in 2001-02, with 221 and 130 in one Test and 688 runs - a record 42% of West Indies' output - in the series, and reclaimed the captaincy the following year.  The task proved as hard second time round, leading a side where he was far and away the best player and where discipline was a constant worry. He led them to defeat for a second time in South Africa, and then lost to England in the Caribbean, too. But then, just when all hope seemed to have deserted West Indies cricket, Lara responded to the prospect of a home series whitewash with an astonishing unbeaten 400 in the final Test against England in Antigua. In doing so, he became the first man to reclaim the world Test batting record, a feat that ensured he would stand alongside Shane Warne as the most charismatic cricketer of the modern era.  Then followed a spectacular low, when Bangladesh came visiting and had West Indies in trouble in the one-day series and the first Test, prompting Lara to threaten his resignation if his batsmen did not lift their game. They responded in the following game, and Lara captained the side in England, where the team was beaten in every Test they played. Astonishingly, he then galvanised his charges and led the one-day team to victory in the ICC Champions Trophy to spark off hopes of a West Indies resurgence. But it was under Shivnarine Chanderpaul that Lara registered his next big moment - in Adelaide in November 2005, when he went past Allan Border's tally of 11174 runs to become Test cricket's most prolific scorer. Then in April 2006, after protracted dispute between the West Indies board and the players union (WIPA), he was reinstated - for the third time - as West Indies captain. Lara's leadership in the five-match one-day home series against India came in for much praise as the tourists were knocked over 4-1, but in the succeeding Test series he struggled. His captaincy was erratic - inspiring in parts, questionable on many occasions - though he later revealed that his hands were tied due to peripheral issues related to team selection.  In Pakistan he led by example with the bat but results continued to go against his side and as West Indies struggled both on and off the field, it became increasingly obvious that Lara was unable to inspire them to greater things, and he appeared increasingly at odds with many of his team-mates. The World Cup offered him a chance to bow out on home soil and on a high, but it was not to be. He showed glimpses of his abilities, but one fifty in seven innings was not enough as West Indies went out with a whimper. He quit, one ODI short of his 300, amid rumours of bitter disputes with administrators. It was a sad, but perhaps inevitable, way for such a genius to bow out. ",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5d610612ed36dc580cc63f74"),
+    "name" : "Ricky Ponting",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "Australia",
+    "role" : "Top-order batsman",
+    "style" : "Right-hand bat",
+    "tmatches" : "168",
+    "odimatches" : "375",
+    "t20matches" : "17",
+    "truns" : "13378",
+    "odiruns" : "13704",
+    "t20runs" : "401",
+    "tavg" : "51.85",
+    "odiavg" : "42.03",
+    "t20avg" : "28.64",
+    "trate" : "58.72",
+    "odirate" : "80.39",
+    "t20rate" : "132.78",
+    "t100" : "41",
+    "odi100" : "30",
+    "t20100" : "0",
+    "imgsrc" : "https://cdn.newsapi.com.au/image/v1/e133cd7334bd5a79b300e627d8ec4302",
+    "profile" : "Ricky Ponting, the most uncompromising player of his generation, grew into Australia's most successful run-maker and only sits below Bradman in the country's overall ratings. It takes an extremely critical eye to diminish his run-scoring achievements, which seem to collect new records in every series. Like spotting a celebrity, it's necessary to look twice when analysing Ponting, first as the archetypal modern batsman, then as the country's 42nd Test captain. There is no doubt about his greatness after taking guard, but his leadership has been under scrutiny for much of his reign. While his blade has sparkled, his stewardship is pock-marked by three Ashes defeats - two in England and one at home - and stumbles to South Africa and India.  Those results didn't stop him from becoming the most successful captain in Test history after passing Steve Waugh's 41 wins in the 2009-10 Boxing Day Test. In the same match he overtook Shane Warne's 92 victories as the most by an individual, and he led Australia to 26 consecutive undefeated (completed) World Cup games. He stepped down from the captaincy when that run ended, in the 2011 World Cup. For the first three years of his reign he was in charge of a superstar unit and did not have to decide much tactically, but once that group headed for retirement he had to change from a manager to moulder.  As a batsman the only debate is where to rank him in the high reaches of the game's greatest run-makers. Acclaimed by Academy coach Rod Marsh as the best teenage batsman he had ever seen, Ponting began with Tasmania at 17 and Australia at 20, and was given out unluckily for 96 on his Test debut. There were some teething problems, including a public admission of an alcohol problem, but the longer he went on the more he matured, building up records and runs.  He plays all the shots with a full flourish of the bat - the cover drive and the pull are particularly productive methods - and knows only to attack. His breathtaking, dead-eye fielding is a force in the game by itself. Only Sachin Tendulkar has more centuries in Tests and ODIs combined than Ponting, who is a natural in the game's traditional forms, but resistant to the perks of Twenty20, from which he retired from in 2009. There have been setbacks against probing seam attacks, high-class finger-spin and, latterly, short balls, which he insists are meant to be pulled or hooked.  After a fairly prolonged patchy run of form, Ponting announced that the Perth Test against South Africa in November-December 2012 would be his last international match.",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5d611af181dd7e4298717fa1"),
+    "name" : "Eoin Morgan",
+    "urating" : "",
+    "status" : "Active",
+    "country" : "England",
+    "role" : "Middle-order batsman",
+    "style" : "Left-hand bat",
+    "tmatches" : "16",
+    "odimatches" : "233",
+    "t20matches" : "81",
+    "truns" : "700",
+    "odiruns" : "7348",
+    "t20runs" : "1810",
+    "tavg" : "30.43",
+    "odiavg" : "39.71",
+    "t20avg" : "28.73",
+    "trate" : "54.77",
+    "odirate" : "91.24",
+    "t20rate" : "131.54",
+    "t100" : "2",
+    "odi100" : "13",
+    "t20100" : "0",
+    "imgsrc" : "https://cdn-02.independent.ie/incoming/article38312062.ece/42ced/AUTOCROP/w620/Morgan3.jpg",
+    "profile" : "Eoin Morgan became England's ODI captain in slightly chaotic circumstances less than two months before the 2015 World Cup and was less than enamoured with an entirely inadequate campaign. What he observed - not just from his own side's lacklustre display, but the inspiration provided by Brendon McCullum's New Zealand side - convinced him an entirely new approach was necessary in England's cricket with a policy of No Fear (and No Retribution) at its heart. It required a man of strong will not just to say it, but to implement it, but Morgan did so, seeking to fashion a side that would play with courage and be impervious to pressure or criticism.  The revival he led was dramatic. Going into the 2019 World Cup year, England were rated not only the No. 1 ODI side but had set a host of new records, including the two highest scores made in the format. Morgan, relentlessly committed to this bold style of play on good days and bad, was at the heart of the transformation.  Morgan's self-sufficiency and independent thought has caused him to tread a path that has not always been popular with English administrators. He preferred the IPL to county cricket long before it was ECB policy. Although he strove for a while to play for England in all three formats, he played the last of his 16 Tests in 2012 and his interest in the longer format appeared to wane once he recognised he had little chance of a recall. He didn't play any first-class cricket in 2016 or 2017 and averaged 11 when he returned for half-a-dozen games in 2018. A somewhat private man, he is respected by his players for his inner strength, cool temperament and tactical nous but remains largely a closed book to those outside the dressing room.  Once the selectors had decided to dispense with Alastair Cook just before Christmas in 2014, Morgan, the regular ODI deputy, was the most obvious candidate. But his elevation coincided with one of his worst periods of form since switching to England from Ireland. A left-hander who quickly built a reputation for inventive and audacious strokeplay, Morgan also possessed the patience and power of shot to be a natural \"finisher\" - a role England had struggled to fill for a decade. In some ways, he was a prototype, encouraging the English game to adopt a more inventive approach only subsequently to face up to the challenge that he might be overtaken by more highly-powered models.  As a young man in Dublin, Morgan was recognised as a cricketer of rare unorthodox talent, who plays the ball exceptionally late and was adroit both at sweeping and reverse sweeping. Time at Dulwich College only hardened his desire to play for England, which he never tried to hide back in Ireland.  Morgan made his Ireland debut at the age of 16, making 99 against Scotland in Ayr, and was soon signed by Middlesex, who gave him his debut a week after his 19th birthday. He floundered in the 2007 World Cup: batting at No. 3, he made only 91 runs in nine games. But he soon established himself in the Middlesex line up, especially in limited overs cricket, and his switch to England was long anticipated. After securing Ireland's qualification for the 2011 World Cup, in April 2009, he was called up by England, thereby denying Ireland the chances to pick him in the World T20 and beyond.  At the age of 23, he shot to prominence on the back of two match-winning innings against South Africa. First was a 34-ball 67 in the Champions Trophy in September 2009, followed two months later with an unbeaten 45-ball 85 in the opening Twenty20 of England's tour of South Africa. His bold approach and crisp hitting evoked comparisons with Kevin Pietersen.  His growing stature was confirmed when he was the only England player to be awarded a new contract at the auction for the third season of the IPL in January 2010. He was signed for $220,000 by Bangalore, where he joined England team-mate Pietersen. But he failed to make an impression and was soon left on the bench. He returned to his best for England in the World Twenty20 in the Caribbean as his powerful shot-making and coolness under pressure helped England to their first triumph in global limited-overs events. With three ODI hundreds that year, his first for England coming against Bangladesh in Dhaka, his reputation was soaring.  Despite a modest first-class record he was rewarded with a surprise call-up to the Test side for England's first Test of the 2010 summer, against Bangladesh. Walking out to bat at 258 for 4, he could not have asked for a gentler introduction and showed enough confidence to pick up his first Test boundary with a reverse-sweep. With the retirement of Paul Collingwood, a permanent space opened up in England's Test side. Centuries against Pakistan (2010) and India (2011) represented the high points.  But a disastrous tour of the UAE in early 2012 effectively ended his Test career. With Joe Root making his debut before the end of the year, he never returned to the Test side.  He remained an indispensable member of the one-day side, though. And while there were prolonged fallow periods - from September 2012, for example, he went a year and 17 innings without an ODI half-century and, by the time he was appointed captain, he had scored one fifty in 19 innings - he produced enough outstanding innings (not least a match-defining century against Ireland) to retain his place. Going into the 2019 World Cup, he was England's record run-scorer in ODIs.  While his captaincy record at domestic level was not inspiring - Middlesex won five out of 22 limited-overs matches under him in 2014 - and the 2015 World Cup campaign was painfully poor, progress was fast once England embraced a new coaching regime (Peter Moores was sacked in May 2015) and bolder selections. A watershed series against New Zealand saw England, so hesitant and mediocre at the World Cup, pass 350 three times in 10 days in registering their highest ever ODI total (408-9; subsequently overtaken) and their highest ever second-innings total (365-9; also subsequently overtaken). A new template had been set.  Such was Morgan's statute within the side, he survived his decision to skip the Bangladesh tour in 2016 on security grounds - the players had been given a choice whether to tour, though the impression remained the management had rather hoped the captain would lead the way - and oversaw a spell of 12 bi-lateral series wins out of 13, including nine in a row broken only by an aberrational defeat against Scotland. If highlights were a 4-1 victory in Australia in early 2018 and a 5-0 whitewash at home later in the year, it was all a prelude to the 2019 World Cup which will surely define both his and his side's legacy. ",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5d611b6f81dd7e4298717fa2"),
+    "name" : "Virat Kohli",
+    "urating" : "",
+    "status" : "Active",
+    "country" : "India",
+    "role" : "Top-order batsman",
+    "style" : "Right-hand bat",
+    "tmatches" : "77",
+    "odimatches" : "239",
+    "t20matches" : "70",
+    "truns" : "6613",
+    "odiruns" : "11520",
+    "t20runs" : "2369",
+    "tavg" : "53.76",
+    "odiavg" : "60.31",
+    "t20avg" : "49.35",
+    "trate" : "57.26",
+    "odirate" : "93.21",
+    "t20rate" : "135.83",
+    "t100" : "25",
+    "odi100" : "43",
+    "t20100" : "0",
+    "imgsrc" : "https://c.ndtvimg.com/2019-07/d3doq9qo_virat-kohli-afp_625x300_10_July_19.jpg",
+    "profile" : "Passionate. No word describes Virat Kohli better. His passion for cricket has made him one of the best batsmen in the world across formats, and has also helped him grow into a ruthless captain. It's also passion that defines Kohli's emotional, effervescent and at times firecracker character. Virat Kohli does not hold back and that remains his strength.  Kohli approaches 30 as the most relentless and popular performer in the sport. He is already a World Cup winner (2011), the Player of the tournament at a World T20 (2014) and has led India to a record eight consecutive Test series wins. Purely as a batsman he is already close to the summit: by his 29th birthday he had more ODI hundreds (32) than anyone apart from Sachin Tendulkar (49), and averages 49 or better in all three formats. He is the only batsman to have achieved this feat.  He is widely considered to be one of the four great batsmen of his era, the others being Australia's Steven Smith, England's Joe Root and New Zealand's Kane Williamson.  In 2012, four years after his India debut, Kohli forced the cricket world's attention upon himself. In the fourth and final Test of a dismal Australia tour for India, who were already 3-0 down, Kohli came to the fore with a composed 116 in Adelaide. It was his maiden Test hundred, and the only century by an Indian batsman on that tour. Later, in the ODI triangular that followed, he uncorked an astonishing, unbeaten 86-ball 133 to help India chase down 321 in 36.4 overs against Sri Lanka. Soon after, he made an ODI career-best 183 against Pakistan in a chase of 331.  There is no better batsman than Kohli in chases: he says targets allow him to think clearly and pace his innings. He is unique in that he allies this clarity of thought with a classical batting technique and a supremely confident mindset. A stable head, sure footwork and firm wrists are part of Kohli's arsenal, which helps him play an array of audacious shots.  Fluent all around the ground, Kohli is equally confident off the front and back foot. And he isn't shy to move away from tradition and take guard a yard outside his crease, as he did on the tour of Australia in 2014-15. Having been embarrassed by James Anderson in England, he made this technical adjustment on the advice of India coach Ravi Shastri, and scored four centuries including twin hundreds in Adelaide. He finished the series as the second-highest run-getter behind Smith, as Australia won 2-0.  Since then, and in no small measure helped by playing Tests at home, India have won series against South Africa, England, Australia and New Zealand while winning away in the West Indies and twice in Sri Lanka.  The biggest turning point - and probably the most pivotal moment - of Kohli's career arrived on December 30, 2014, when MS Dhoni announced his unexpected retirement from Tests following the Boxing Day Test in Melbourne. Kohli could not believe that Dhoni would no longer wear whites, and that he would now lead India. The second thought made him cry. \"If you told me when I started playing cricket that at 26 I will be Test captain of India... no chance,\" is how he later described his feelings.  \"A brat, arrogant and casual\" was how Kohli described himself in 2008, when he then became the second India captain to lift the Under-19 World Cup. He excelled in the IPL for Royal Challengers Bangalore, which put him on the world map and made sponsors line up at his doorstep, making him a brand even before he had established himself in international cricket. But as he steadily grew to become India's most dependable batsman, and not just a brand, Kohli realised he needed to rid of old, bad habits. He lost weight, gained focus and became a relentless force, supremely fit and quick across the turf, and perhaps the hungriest batsman in the world when it comes to converting ones into twos.  The IPL helped Kohli, like many other Indians, play positively. He is certain that his 52-ball 100* in a chase of 360 against Australia in the Jaipur ODI of 2013 (still the fastest by an Indian) was only possible because of his post-IPL mindset. In 2016, Kohli smacked four centuries in the tournament, having not scored even a single ton in his first eight seasons. When Royal Challengers finished as runners-up in 2016, Kohli was just 27 runs short of reaching an unprecedented 1000 runs for the season.  Kohli has played with men who presented him awards when he was a chubby-faced schoolboy, and some of the same men have ended up playing under his captaincy. Under Kohli, India have ascended to the No. 1 Test ranking and held onto it with an iron grip while also reaching the joint top position in ODIs. He has set his sights quite a bit higher, though: his quest is to create a legacy like the ones established by all-conquering captains like Clive Lloyd and Steve Waugh. ",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5d611bec81dd7e4298717fa3"),
+    "name" : "Imam-ul-Haq",
+    "urating" : "",
+    "status" : "Active",
+    "country" : "Pakistan",
+    "role" : "Top-order batsman",
+    "style" : "Left-hand bat",
+    "tmatches" : "10",
+    "odimatches" : "36",
+    "t20matches" : "1",
+    "truns" : "483",
+    "odiruns" : "1692",
+    "t20runs" : "7",
+    "tavg" : "28.41",
+    "odiavg" : "54.58",
+    "t20avg" : "7",
+    "trate" : "47.49",
+    "odirate" : "80.57",
+    "t20rate" : "70",
+    "t100" : "0",
+    "odi100" : "7",
+    "t20100" : "0",
+    "imgsrc" : "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201907/imamulhaq-770x433.png?dvC3lI3jlSs12mwnbzB_5rdvP7p1FYP3",
+    "profile" : "Prodigious or privileged? Imam ul Haq answered that question emphatically right at the get-go, stopping conspiracy theorists and cynics who cried nepotism - his uncle is chief selector Inzamam-ul-Haq - with a glorious start to his international career. A hundred against Sri Lanka on debut made him the second player from Pakistan to reach three figures in his first match. He followed that up with a splendid outing in Zimbabwe, where he scored three centuries and became the first player in ODI history to score four hundreds in his first nine matches.  A bespectacled, slight young man with a deferential, curious note running through his voice, Imam is a ruthless accumulator at the crease. A left-handed opening batsman descended from arguably Pakistan's greatest batsman of all time, Imam is particularly strong on the drive and off his hips. He looks to have faith in his abilities even in high-pressure moments, though he is admittedly yet to be tested in truly demanding conditions or the highest quality of opposition; he was unwittingly done a favour when he was benched for most of Pakistan's disastrous ODI tour of New Zealand at the start of 2018.  His start to Test cricket hasn't quite been as eye-catching, though an unbeaten 74 in the fourth innings of his debut match prevented Pakistan from falling to an astonishing defeat against the debuting Test nation Ireland. In the two Tests that followed in English conditions, he appeared susceptible to the moving ball - Stuart Broad dismissed him in all three innings, twice by trapping him lbw. He has the technique and level head to be able to succeed in red-ball cricket, and upcoming home tours of Australia and New Zealand provide him the perfect opportunity to make his mark as a long-term opener in both longer formats.",
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5d611c7381dd7e4298717fa4"),
+    "name" : "Gary Kirsten",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "South Africa",
+    "role" : "Middle-order Batsman",
+    "style" : "Left-hand bat",
+    "tmatches" : "101",
+    "odimatches" : "185",
+    "t20matches" : "",
+    "truns" : "7289",
+    "odiruns" : "6798",
+    "t20runs" : "",
+    "tavg" : "45.27",
+    "odiavg" : "40.95",
+    "t20avg" : "",
+    "trate" : "43.43",
+    "odirate" : "72.04",
+    "t20rate" : "",
+    "t100" : "21",
+    "odi100" : "13",
+    "t20100" : "",
+    "imgsrc" : "https://www.thesouthafrican.com/wp-content/uploads/2013/05/Gary-Kirsten.jpg",
+    "profile" : "Gary Kirsten was never blessed with the flair and the almost pure technique of his half-brother Peter, but his discipline, temperament and his penchant for hard work stood during his days as a batsman, when he became so established at the top of the South African batting order that it's almost impossible to think how they would cope without him. Then, all those virtues brought him rich rewards after his playing days too, as he became one of the most successful and popular coaches of India. The side went to the top of the Test rankings during his stint, which ended, quite fittingly, with India's World Cup triumph in 2011.  As a batsman, what stood out was his determination, the ability to concentrate for long periods and a burning desire to score runs. A left-hander with a relatively unique technique, Kirsten simply worked out his strengths and weaknesses and based his game around them. In this respect he was one of the most organised batsman to play for South Africa since their readmission. Calm and level-headed, he brought a healthy degree of common sense to the art of batting, which possibly explains why off the field and in the dressing room the dafter side of his personality came out. Periodically, Kirsten endured patches when he persistently got out in similar fashion - chopping the ball on to his stumps, for instance, or getting himself caught down the leg side.  Each time this happened, though, Kirsten worked through the problem, made the adjustments and played himself back into form. He enjoyed particular success on the subcontinent - where other players have floundered against the turning ball. Kirsten, though, was drawn on patience and soft hands to see him through. And if there was any player likely to score a big hundred, then it was Kirsten. His best of 275, a result of batting for over 14 and a half hours as South Africa followed on against England at Kingsmead in 1999-00, was the second-longest in Test history. He then returned to haunt England in 2003 and gutsed out a crucial 130 in the Headingley Test, which South Africa won by 191 runs. His good form in that series persuaded him to postpone his retirement until the end of the New Zealand tour in 2003-04.  Fittingly, he scored a century in the first Test of that series - his 99th - and scored a typically gritty 76 in his final game to help South Africa tie the series. After retiring, he spent some time with the Warriors as a consultant batting coach and, in 2006, set up his own academy in Cape Town. In December 2007, he signed up as coach of India, and his quiet and low-profile approach to the job was appreciated by current and past players. After coaching India to No. 1 in Test cricket and World Cup success in 2011, Kirsten moved on to see if he could repeat the magic with his home country. While the global title didn't come, he did firmly establish South Africa as the No. 1 team in Tests. The highlights of his time with them were away series wins against England and then Australia in the latter half of 2012, results which helped South Africa to the top of the rankings. He stood down as South Africa coach in July 2013 and, a couple of months later, was named coach of the IPL franchise Delhi Daredevils.",
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5d611dcb81dd7e4298717fa5"),
+    "name" : "Alistair Campbell",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "Zimbabwe",
+    "role" : "Middle-order Batsman",
+    "style" : "Left-hand bat",
+    "tmatches" : "60",
+    "odimatches" : "188",
+    "t20matches" : "",
+    "truns" : "2858",
+    "odiruns" : "5185",
+    "t20runs" : "",
+    "tavg" : "27.21",
+    "odiavg" : "30.50",
+    "t20avg" : "",
+    "trate" : "41.76",
+    "odirate" : "66.18",
+    "t20rate" : "",
+    "t100" : "2",
+    "odi100" : "7",
+    "t20100" : "",
+    "imgsrc" : "https://www.crictracker.com/wp-content/uploads/2015/09/Alistair-Campbell-of-Zimbabwe-GettyImages-980032.jpg",
+    "profile" : "An elegant left-hander, Alistair Campbell showed great early promise, being selected for the national side while still at school, and becoming the youngest Zimbabwean to make a first-class century. Selected for the 1992 World Cup at only 19, he struggled against world-class bowling, but the experience was invaluable. He soon became a fixture in the national side, and greatly impressed on the 1993-94 Pakistan tour, playing some excellent innings against one of the strongest bowling attacks in the world. His aggressive style has proved effective in one-day internationals, but his wish to dominate the bowling has led to difficulties in building big innings in Test matches. After being stuck on a Test-best of 99 for five years, he finally scored his first century, against India at Nagpur in 2000-01, and followed that up with 103 the following summer against West Indies. Campbell plays a wide range of shots, generating power without apparent effort. He occasionally bowls right-arm offspin, and is a magnificent fielder in any position. On taking over the captaincy in 1996, he led Zimbabwe to some notable successes including their remarkable series victory in Pakistan in 1998-99, and their qualification to the Super Sixes in the 1999 World Cup. However, he stood down from the captaincy in November 1999, citing personal reasons. He abruptly announced his retirement from international cricket under a cloud after he was originally overlooked for the 2003 World Cup, but was later brought back in to replace the injured Mark Vermeulen, and then when the selectors hinted that he wasn&#39;t needed for the England tour later that year. He quit soon after for a time ran Lilfordia Junior School in Harare with his father, Iain, a prominent junior coach who has groomed a number of Zimbabwe&#39;s cricketers. Amid the re-vamping of Zimbabwe&#39;s domestic structure in 2009-10, which involved the return of a handful of former cricketers to administrative roles, Campbell was appointed chairman of selectors by the ZC board. ",
+    "__v" : 0
+}
+
+------------------------------------------------
+Bowlers
+--------
+/* 1 */
+{
+    "_id" : ObjectId("5d60c3db8d1a54d681655fb4"),
+    "name" : "Javagal Srinath",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "India",
+    "style" : "Right-arm fast-medium",
+    "tmatches" : "67",
+    "odimatches" : "229",
+    "t20matches" : "",
+    "tballs" : "15104",
+    "odiballs" : "11935",
+    "t20balls" : "",
+    "twkts" : "236",
+    "odiwkts" : "315",
+    "t20wkts" : "",
+    "trate" : "64",
+    "odirate" : "37.8",
+    "t20rate" : "",
+    "tavg" : "30.49",
+    "odiavg" : "28.08",
+    "t20avg" : "",
+    "imgsrc" : "https://cricfit.com/wp-content/uploads/2017/05/Javagal-Srinath.jpg",
+    "profile" : "Arguably the nation's fastest-ever bowler, Javagal Srinath heralded a period of awakening for Indian pace bowling, after Kapil Dev's swing had fired popular imagination. And when he retired from international cricket of 11 years in 2003, Srinath was second only to Kapil in number of Test wickets by an Indian paceman."
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5d61152a81dd7e4298717f99"),
+    "name" : "Allan Donald",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "South Africa",
+    "style" : "Right-arm fast",
+    "tmatches" : "72",
+    "odimatches" : "164",
+    "t20matches" : "",
+    "tballs" : "15519",
+    "odiballs" : "8561",
+    "t20balls" : "",
+    "twkts" : "330",
+    "odiwkts" : "272",
+    "t20wkts" : "",
+    "trate" : "47",
+    "odirate" : "31.4",
+    "t20rate" : "",
+    "tavg" : "22.25",
+    "odiavg" : "21.78",
+    "t20avg" : "",
+    "imgsrc" : "http://www.theringsideview.com/wp-content/uploads/2016/06/allan-donald.jpg",
+    "profile" : "If the credit for South Africa's success in the modern era could be given to one player, that cricketer would be Allan Donald. A classical action and top-drawer pace would have won him a place in any side in his prime, and for much of his career he was the only world-class performer in the South African team, spearing the ball in, shaping it away and always making things happen. His strike rate was below 50 in Tests and close to 30 in one-day internationals. Inevitably, he was over-bowled and the injuries began to accumulate in the twilight of his career. He quit Test cricket after breaking down in the crushing defeat by Australia at Johannesburg in 2001-02, retired from ODIs a year later, after South Africa's exit from the 2003 World Cup, and from all cricket a year later as his physical deterioration accelerated. Of Afrikaans stock, Donald speaks English with a slight Birmingham accent - at least, to South African ears - picked up during his lengthy spell as Warwickshire's overseas professional, a role he filled with distinction. No living South African player, past or present, commands as much respect from the public and his peers as Donald, the first bowler from his country to take 300 Test wickets. He transferred his huge knowledge of quick bowling to the commentary box and coaching and took up the role of bowling coach with England in 2007. However, when it was offered full time he turned it down, wanting to spend more time with his family, and instead took up a role with Warwickshire where he had enjoyed years of success as an overseas player in 1990s. ",
+    "__v" : 0
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5d61163081dd7e4298717f9a"),
+    "name" : "Jasprit Bumrah",
+    "urating" : "",
+    "status" : "Active",
+    "country" : "India",
+    "style" : "Right-arm fast-medium",
+    "tmatches" : "10",
+    "odimatches" : "58",
+    "t20matches" : "42",
+    "tballs" : "2416",
+    "odiballs" : "3009",
+    "t20balls" : "919",
+    "twkts" : "49",
+    "odiwkts" : "103",
+    "t20wkts" : "51",
+    "trate" : "49.3",
+    "odirate" : "29.2",
+    "t20rate" : "18",
+    "tavg" : "21.89",
+    "odiavg" : "21.88",
+    "t20avg" : "20.17",
+    "imgsrc" : "https://imagevars.gulfnews.com/2019/06/06/India-s-Jasprit-Bumrah_16b2cba48cf_large.jpg",
+    "profile" : "Jasprit Bumrah grabbed eyeballs first with his unorthodox action, and then his bowling skills. Armed with an anomalous, sling-arm action and natural pace, the peculiar release point of Bumrah's deliveries makes it hard for batsmen to pick him.",
+    "__v" : 0
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5d61170781dd7e4298717f9b"),
+    "name" : "Stuart Broad",
+    "urating" : "",
+    "status" : "Active",
+    "country" : "England",
+    "style" : "Right-arm fast-medium",
+    "tmatches" : "129",
+    "odimatches" : "121",
+    "t20matches" : "56",
+    "tballs" : "26374",
+    "odiballs" : "6109",
+    "t20balls" : "1173",
+    "twkts" : "454",
+    "odiwkts" : "178",
+    "t20wkts" : "65",
+    "trate" : "58",
+    "odirate" : "34.3",
+    "t20rate" : "18",
+    "tavg" : "28.74",
+    "odiavg" : "30.13",
+    "t20avg" : "22.93",
+    "imgsrc" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Stuart_broad.jpg/390px-Stuart_broad.jpg",
+    "profile" : "Whatever innocent impression might initially be given by his blond hair and baby-faced good looks, there have been few feistier cricketers in England's Test history than Stuart Broad. His new-ball partnership with James Anderson has sustained England's Test attack for years, his own aggression and ability to flog bounce from all but the most benign surface dovetailing nicely with Anderson's technical excellence. And as Anderson continued to set new landmarks, Broad followed ably in his slipstream, emulating his friend when becoming only the second Englishman to take 400 Test wickets.",
+    "__v" : 0
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5d6117ca81dd7e4298717f9c"),
+    "name" : "Patrick Cummins",
+    "urating" : "",
+    "status" : "Active",
+    "country" : "Australia",
+    "style" : "Right-arm fast",
+    "tmatches" : "22",
+    "odimatches" : "58",
+    "t20matches" : "20",
+    "tballs" : "4896",
+    "odiballs" : "3033",
+    "t20balls" : "456",
+    "twkts" : "107",
+    "odiwkts" : "96",
+    "t20wkts" : "25",
+    "trate" : "45.7",
+    "odirate" : "31.5",
+    "t20rate" : "6.98",
+    "tavg" : "21.32",
+    "odiavg" : "27.11",
+    "t20avg" : "21.24",
+    "imgsrc" : "https://twenty20wiki.com/wp-content/uploads/2015/10/Pat-Cummins-eyeing-at-World-T20-2016-return.jpg",
+    "profile" : "In the wake of Australia's ball-tampering scandal Pat Cummins became arguably the nation's shining light in a cricketing sense. He took match figures of 9 for 141 against South Africa in Johannesburg - the scene of his debut as an 18-year-old in 2011 - after Australia's world had fallen in on them in Cape Town, and then stood tall in the rebuild over the next 12 months.",
+    "__v" : 0
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5d61186981dd7e4298717f9d"),
+    "name" : "Shane Bond",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "New Zealand",
+    "style" : "Right-arm fast",
+    "tmatches" : "18",
+    "odimatches" : "82",
+    "t20matches" : "20",
+    "tballs" : "3372",
+    "odiballs" : "4295",
+    "t20balls" : "465",
+    "twkts" : "87",
+    "odiwkts" : "147",
+    "t20wkts" : "25",
+    "trate" : "38.7",
+    "odirate" : "29.2",
+    "t20rate" : "18.6",
+    "tavg" : "22.09",
+    "odiavg" : "20.88",
+    "t20avg" : "21.72",
+    "imgsrc" : "https://www.crictracker.com/wp-content/uploads/2017/04/Shane-Bond-1.jpg",
+    "profile" : "Fast, fearsome and frustratingly fragile, Shane Bond will be remembered as much for his misfortune with injuries as for his wonderful ability. Bond was New Zealand's best pace bowler in the post-Hadlee era, but missed more games than he played.",
+    "__v" : 0
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5d6118fe81dd7e4298717f9e"),
+    "name" : "Shane Warne",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "Australia",
+    "style" : "Legbreak googly",
+    "tmatches" : "145",
+    "odimatches" : "194",
+    "t20matches" : "",
+    "tballs" : "40705",
+    "odiballs" : "10642",
+    "t20balls" : "",
+    "twkts" : "708",
+    "odiwkts" : "293",
+    "t20wkts" : "",
+    "trate" : "57.4",
+    "odirate" : "36.3",
+    "t20rate" : "",
+    "tavg" : "25.41",
+    "odiavg" : "25.73",
+    "t20avg" : "",
+    "imgsrc" : "http://a.espncdn.com/combiner/i?img=/media/motion/2015/0705/dm_150705_engvaus-pontingashesxi-10-warne/dm_150705_engvaus-pontingashesxi-10-warne.jpg?w=960&h=540",
+    "profile" : "At first there were nerves and chubbiness. Then came wild soaring legbreaks, followed by fame and flippers. For a long while there were women, then a bookmaker, then diet pills, then more women - and headlines, always headlines. Now he has come out the other end, his bluff and bluster and mischief and innocence somehow intact. The man who in 2000 was rated among the five greatest cricketers of the 20th century was, in 2006, bowling better than ever.",
+    "__v" : 0
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5d6119a181dd7e4298717f9f"),
+    "name" : "Shoaib Akhtar",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "Pakistan",
+    "style" : " Right-arm fast",
+    "tmatches" : "46",
+    "odimatches" : "163",
+    "t20matches" : "15",
+    "tballs" : "8143",
+    "odiballs" : "7764",
+    "t20balls" : "318",
+    "twkts" : "178",
+    "odiwkts" : "247",
+    "t20wkts" : "19",
+    "trate" : "45.7",
+    "odirate" : "31.4",
+    "t20rate" : "16.7",
+    "tavg" : "25.69",
+    "odiavg" : "24.97",
+    "t20avg" : "22.73",
+    "imgsrc" : "https://imagevars.gulfnews.com/2011/3/8/1_16a08085cf6.773671_1469524181_16a08085cf6_large.jpg",
+    "profile" : "From the moment Shoaib emerged on the scene in the late 90s, the world knew it was in for some career. First there was the extreme pace and there was also the attitude; Shoaib was the fastest bowler in the world, he knew it, he made sure others knew it. He was a natural successor to the legacy of Imran, Wasim and Waqar. But that he will end his career an 'if only' or a 'coulda been' is the great tragedy. He had it all and he blew it.  What he had was remarkable. Early on, in 1999, there wasn't a more thrilling sight in the world than Shoaib hurtling in off an impossibly long run and beating the world's best batsmen for pace. Rahul Dravid and Sachin Tendulkar were clean bowled off successive deliveries at Eden Gardens and the World Cup in England later in the year was all but Shoaib's.  Other peaks came intermittently, but from 2004 to 2006, he rediscovered a spark; the trophy was the home series win over England in 2005-06 in which he took 17 wickets. By this time not only was he still very, very quick, but he had become an extremely smart bowler, an oft-underrated aspect of his development.",
+    "__v" : 0
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5d611a1f81dd7e4298717fa0"),
+    "name" : "Anil Kumble",
+    "urating" : "",
+    "status" : "Retired",
+    "country" : "India",
+    "style" : "Legbreak googly",
+    "tmatches" : "132",
+    "odimatches" : "271",
+    "t20matches" : "",
+    "tballs" : "40850",
+    "odiballs" : "14496",
+    "t20balls" : "",
+    "twkts" : "619",
+    "odiwkts" : "337",
+    "t20wkts" : "",
+    "trate" : "65.9",
+    "odirate" : "43",
+    "t20rate" : "",
+    "tavg" : "29.65",
+    "odiavg" : "30.89",
+    "t20avg" : "",
+    "imgsrc" : "https://m.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/06/23/Pictures/cricket-against-captain-kumble-prepares-australia-their_b197cce4-3943-11e6-8c9c-cf7838564d36.jpg",
+    "profile" : "No bowler in history won India more Test matches than Anil Kumble, and there probably hasn't been a harder trier either. Like the great tall wristspinners Bill O'Reilly and his own idol BS Chandrasekhar, Kumble traded the legspinner's proverbial yo-yo for a spear, as the ball hacked through the air rather than hanging in it and came off the pitch with a kick rather than a kink. The method provided him stunning success, particularly on Indian soil, where his deliveries burst like packets of water upon the feeblest hint of a crack, and more than one modern-day batsman remarked that there was no more difficult challenge in cricket than handling Kumble on a wearing surface.",
+    "__v" : 0
+}
+
+----------------------------------------------------------
+btsman=[{
+    "name" : "Sachin Tendulkar",
+    "urating" : ""
+},
+{
+    "name" : "Mahendra Singh Dhoni",
+    "urating" : ""
+},
+{
+    "name" : "Brian Lara",
+    "urating" : ""
+},
+{
+    "name" : "Ricky Ponting",
+    "urating" : ""
+},
+{
+    "name" : "Eoin Morgan",
+    "urating" : "" 
+},
+{
+    "name" : "Virat Kohli",
+    "urating" : ""
+},
+{
+	"name" : "Imam-ul-Haq",
+    "urating" : ""
+},
+{
+    "name" : "Gary Kirsten",
+    "urating" : ""
+},
+{
+    "name" : "Alistair Campbell",
+    "urating" : ""
+}]
