@@ -34,6 +34,46 @@ Mongoose.connect('mongodb://localhost:27017/cricketDB',{ useNewUrlParser: true }
     //console.log('Database online');
     });
 
+    btsman=[{
+        "name" : "Sachin Tendulkar",
+        "urating" : "4"
+    },
+    {
+        "name" : "Mahendra Singh Dhoni",
+        "urating" : "3.5"
+    },
+    {
+        "name" : "Brian Lara",
+        "urating" : "4.5"
+    },
+    {
+        "name" : "Ricky Ponting",
+        "urating" : "3.5"
+    },
+    {
+        "name" : "Eoin Morgan",
+        "urating" : "3" 
+    },
+    {
+        "name" : "Virat Kohli",
+        "urating" : "3.5"
+    },
+    {
+        "name" : "Imam-ul-Haq",
+        "urating" : "2"
+    },
+    {
+        "name" : "Gary Kirsten",
+        "urating" : "3.5"
+    },
+    {
+        "name" : "Alistair Campbell",
+        "urating" : "1"
+    }];
+
+
+
+
 //-----------Define dataschemas here--------------
 
 const batsmenSchema = Mongoose.model('batsmans',{
@@ -452,7 +492,7 @@ app.get('/addBowler',(req,res)=>{
 //---------------------------------------
 //-----trial--------------------
 app.get('/trial',(req,res)=>{
-    res.render('trial',{nav:navlink,pageName:pagename,Rating:{rating:'3'}, title:"Trial", value:{'title':'placeholdervalue'}});
+    res.render('trial',{nav:navlink,pageName:pagename,Rating:{rating:'1.5'}, Batsman:btsman, title:"Trial", value:{'title':'placeholdervalue'}});
 });
 
 app.post('/trialaction',(req,res)=>{

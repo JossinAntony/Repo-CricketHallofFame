@@ -19,20 +19,12 @@
 <script src="/rater.js" charset="utf-8"></script>
 <link href= "style.css" rel="stylesheet">
 
-<script>var rating = "<%= Rating.rating %>"</script>
-<script>
-    
 
+<script>
     $(document).ready(function(){
-        var options = {
-            max_value: 5,
-            step_size: 0.5,
-            selected_symbol_type: 'utf8_star',
-            initial_value: rating,
-            //update_input_field_name: $("#input2"),
-        }
+
         
-        $(".rate2").rate(options);
+        
 
         $(".rate2").on("change", function(ev, data){
             $.post('/submitJSONData',  // url
@@ -76,9 +68,40 @@
     <script>document.getElementById("input").defaultValue = "Goofy"</script>
     <button class="button btn-info" type="submit">Save</button>
     </form> -->
-    <div class="rate2"></div>
-    <div class="rate2 fixed"></div>
-    <!-- <input id="input2" type="text"> -->
+    <!-- <div class="rate2"></div>
+    <div class="rate2 fixed"></div> -->
+    <!-- <% for(var i = 0; i < 1; i++){ %>
+        <script>var rating = "<%= Rating.rating %>"</script>
+    <%}%> -->
+    <script>
+            var rating = "<%= Batsman[0].urating %>"
+            var options = {
+                max_value: 5,
+                step_size: 0.5,
+                selected_symbol_type: 'utf8_star',
+                initial_value: rating,
+            }
+            $(".rate2").rate(options);
+        </script>
+        <div class="rate2 fixed"></div> 
+
+    <% for(var i = 2; i < Batsman.length; i++){ %>
+        <script>
+            var rating = "<%= Batsman[i].urating %>"
+            var options = {
+                max_value: 5,
+                step_size: 0.5,
+                selected_symbol_type: 'utf8_star',
+                initial_value: rating,
+            }
+            $(".rate2").rate(options);
+        </script>
+        <h5><%= Batsman[i].name %></h5>
+        <div class="rate2 fixed"></div>
+    <%}%> 
+
+    
+
     
 </body>
 </html>

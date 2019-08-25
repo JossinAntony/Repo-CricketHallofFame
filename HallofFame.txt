@@ -514,3 +514,40 @@ Bowlers
     "__v" : 0
 }
 
+----------------------------------------------------------
+btsman=[{
+    "name" : "Sachin Tendulkar",
+    "urating" : ""
+},
+{
+    "name" : "Mahendra Singh Dhoni",
+    "urating" : ""
+},
+{
+    "name" : "Brian Lara",
+    "urating" : ""
+},
+{
+    "name" : "Ricky Ponting",
+    "urating" : ""
+},
+{
+    "name" : "Eoin Morgan",
+    "urating" : "" 
+},
+{
+    "name" : "Virat Kohli",
+    "urating" : ""
+},
+{
+	"name" : "Imam-ul-Haq",
+    "urating" : ""
+},
+{
+    "name" : "Gary Kirsten",
+    "urating" : ""
+},
+{
+    "name" : "Alistair Campbell",
+    "urating" : ""
+}]
