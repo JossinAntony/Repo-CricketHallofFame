@@ -20,10 +20,6 @@ navlink = [
     {
         "title":"Admin Panel",
         "link":"/adminPanel"
-    },
-    {
-        "title":"Trial",
-        "link":"/trial"
     }
 ];
 
