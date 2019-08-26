@@ -148,3 +148,7 @@ p
     height: 100%;
     width: 100%;
   }
+
+  .navbar-brand #sign{
+    float: right;
+  }

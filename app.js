@@ -153,6 +153,9 @@ app.get('/home',(req,res)=>{
 app.get('/adminlogin',(req,res)=>{                
     res.render('admin login',{pageName:pagename});
 });
+app.get('/',(req,res)=>{          
+    res.render('logout');
+});
 app.get('/adminAPI',(req,res)=>{
     var item1 = req.query.uemail;
     var item2 = req.query.upass;
@@ -285,7 +288,7 @@ app.get('/userall',(req,res)=>{
 //4) --> /view is display content signupdetails
 
 
-const API2 = "http://localhost:3010/userall";
+const API2 = "http://localhost:4032/userall";
 app.get('/view',(req,res)=>{
 
     request(API2,(error,response,body)=>{
