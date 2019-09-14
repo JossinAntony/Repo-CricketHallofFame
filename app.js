@@ -26,10 +26,13 @@ navlink = [
 
 pagename = {'pagename':'Cricket Hall of Fame'};
 
-Mongoose.connect('mongodb://localhost:27017/cricketDB',{ useNewUrlParser: true }, (err, res) => {
-    if (err) throw err;
-    //console.log('Database online');
-    });
+// Mongoose.connect('mongodb://localhost:27017/cricketDB',{ useNewUrlParser: true }, (err, res) => {
+//     if (err) throw err;
+//     //console.log('Database online');
+//     });
+
+Mongoose.connect('mongodb+srv://jossin:jossin@cluster0-arjkd.mongodb.net/test?retryWrites=true&w=majority');
+
 
     btsman=[{
         "name" : "Sachin Tendulkar",
@@ -151,7 +154,9 @@ app.get('/retrieveBatsmenAPI',(req,res)=>{
 });
 
 //Retrieve Batsmen APILInk
-const retrieveBatsmenAPILink = 'http://localhost:3046/retrieveBatsmenAPI'
+//const retrieveBatsmenAPILink = 'http://localhost:3046/retrieveBatsmenAPI';
+const retrieveBatsmenAPILink = 'https://cricket-app-jossin.herokuapp.com/retrieveBatsmenAPI'
+
 
 //retrieveallbatsmen set view
 // app.get('/',(req,res)=>{
@@ -186,7 +191,8 @@ app.post('/saveUserDetailsAPI',(req,res)=>{
     })
 })
 
-const saveUserDetailsAPILink = "http://localhost:3046/saveUserDetailsAPI";
+//const saveUserDetailsAPILink = "http://localhost:3046/saveUserDetailsAPI";
+const saveUserDetailsAPILink = 'https://cricket-app-jossin.herokuapp.com/saveUserDetailsAPI';
 
 //retrieve user from username
 app.get('/retrieveUser',(req,res)=>{
@@ -201,7 +207,9 @@ app.get('/retrieveUser',(req,res)=>{
         }
     })
 })
-const retrieveUserAPILink = "http://localhost:3046/retrieveUser";
+
+//const retrieveUserAPILink = "http://localhost:3046/retrieveUser";
+const retrieveUserAPILink = 'https://cricket-app-jossin.herokuapp.com/retrieveUser';
 
 //save user details from sign up page
 app.post('/saveUser',(req,res)=>{
@@ -238,7 +246,7 @@ app.post('/saveUser',(req,res)=>{
 app.post('/logInAPI',(req, res)=>{
     var username = req.body.uname;
     var pwd =req.body.upass;
-    request("http://localhost:3046/retrieveUser"+"/?q="+username,(error, response, body)=>{
+    request("https://cricket-app-jossin.herokuapp.com/retrieveUser"+"/?q="+username,(error, response, body)=>{
         if(error){
             throw error;
             res.send(error);
@@ -308,7 +316,8 @@ app.get('/retrieveBatsmanAPI',(req,res)=>{
 })
 
 //Retrieve single batsman API LInk
-const retrieveBatsmanAPILink = 'http://localhost:3046/retrieveBatsmanAPI'
+//const retrieveBatsmanAPILink = 'http://localhost:3046/retrieveBatsmanAPI';
+const retrieveBatsmanAPILink = 'https://cricket-app-jossin.herokuapp.com/retrieveBatsmanAPI';
 
 //Retrieve single batsman view
 app.get('/retrieveBatsman/:id',(req,res)=>{
@@ -447,7 +456,8 @@ app.get('/retrieveBowlersAPI',(req, res)=>{
 });
 
 //RetrieveBowlersAPILink
-const retrieveBowlersAPILink = 'http://localhost:3046/retrieveBowlersAPI'
+//const retrieveBowlersAPILink = 'http://localhost:3046/retrieveBowlersAPI';
+const retrieveBowlersAPILink = 'https://cricket-app-jossin.herokuapp.com/retrieveBowlersAPI';
 
 //RetrieveBowlersfunction
 app.get('/viewBowlers',(req,res)=>{
@@ -477,7 +487,8 @@ app.get('/retrieveBowlerAPI',(req,res)=>{
 })
 
 //Retrieve single bowler API LInk
-const retrieveBowlerAPILink = 'http://localhost:3046/retrieveBowlerAPI'
+//const retrieveBowlerAPILink = 'http://localhost:3046/retrieveBowlerAPI';
+const retrieveBowlerAPILink = 'https://cricket-app-jossin.herokuapp.com/retrieveBowlerAPI';
 
 //Retrieve single bowler view
 app.get('/retrieveBowler/:id',(req,res)=>{
