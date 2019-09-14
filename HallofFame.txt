@@ -517,37 +517,37 @@ Bowlers
 ----------------------------------------------------------
 btsman=[{
     "name" : "Sachin Tendulkar",
-    "urating" : ""
+    "urating" : "4"
 },
 {
     "name" : "Mahendra Singh Dhoni",
-    "urating" : ""
+    "urating" : "3.5"
 },
 {
     "name" : "Brian Lara",
-    "urating" : ""
+    "urating" : "4.5"
 },
 {
     "name" : "Ricky Ponting",
-    "urating" : ""
+    "urating" : "3.5"
 },
 {
     "name" : "Eoin Morgan",
-    "urating" : "" 
+    "urating" : "3" 
 },
 {
     "name" : "Virat Kohli",
-    "urating" : ""
+    "urating" : "3.5"
 },
 {
 	"name" : "Imam-ul-Haq",
-    "urating" : ""
+    "urating" : "2"
 },
 {
     "name" : "Gary Kirsten",
-    "urating" : ""
+    "urating" : "3.5"
 },
 {
     "name" : "Alistair Campbell",
-    "urating" : ""
+    "urating" : "1"
 }]
