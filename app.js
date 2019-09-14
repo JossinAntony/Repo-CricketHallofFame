@@ -8,6 +8,7 @@ var app = new Express();
 app.set('view engine', 'ejs');
 app.use(Express.static(__dirname+'/public'));
 app.use(bodyParser.urlencoded({extended:true}));
+app.use(bodyParser.json());
 
 navlink = [
     {
@@ -153,16 +154,131 @@ app.get('/retrieveBatsmenAPI',(req,res)=>{
 const retrieveBatsmenAPILink = 'http://localhost:3046/retrieveBatsmenAPI'
 
 //retrieveallbatsmen set view
-app.get('/',(req,res)=>{
-    request(retrieveBatsmenAPILink,(error,response,body)=>{
-        if (error){
+// app.get('/',(req,res)=>{
+//     request(retrieveBatsmenAPILink,(error,response,body)=>{
+//         if (error){
+//             throw error;
+//             res.send(error);
+//         }else {
+//             data = JSON.parse(body);
+//             res.render('viewBatsmen',{nav:navlink, title: "Batsmen",pageName:pagename, batsmans:data })
+//         }
+//     })
+// });
+
+const userSchema = Mongoose.model('users',{
+    uname:String,
+    upass:String
+    });
+
+
+//save user deatils(username & password)API
+app.post('/saveUserDetailsAPI',(req,res)=>{
+    var details = req.body;
+    var user = new userSchema(details);
+    user.save((error,data)=>{
+        if(error){
             throw error;
             res.send(error);
-        }else {
-            data = JSON.parse(body);
-            res.render('viewBatsmen',{nav:navlink, title: "Batsmen",pageName:pagename, batsmans:data })
+        }else{
+            res.send(data)
         }
     })
+})
+
+const saveUserDetailsAPILink = "http://localhost:3046/saveUserDetailsAPI";
+
+//retrieve user from username
+app.get('/retrieveUser',(req,res)=>{
+    var user = req.query.q;
+    userSchema.find({uname:user},(error,data)=>{
+        if(error){
+            throw error;
+            res.send(error);
+        }else{
+            res.send(data)
+            // console.log(data);
+        }
+    })
+})
+const retrieveUserAPILink = "http://localhost:3046/retrieveUser";
+
+//save user details from sign up page
+app.post('/saveUser',(req,res)=>{
+    var username = req.body.uname;
+    var pwd = req.body.upass;
+    var cpwd = req.body.cpass;
+    request(retrieveUserAPILink+"/?q="+username,(error,response,body)=>{
+        if(error){
+            throw error;
+            res.send(error);
+        }else{
+            var data = JSON.parse(body);
+       }
+
+        if(data.length <= 0){
+        var user = new userSchema(req.body);
+        var result = user.save((error,data)=>{
+            if(error)
+            {
+                throw error;
+                res.send(error);
+            }
+            else
+            {
+                res.send("<script>alert('Sign up successful!')</script><script>window.location.href='/login'</script>");
+            }
+        });
+        }else{
+            res.send("<script>alert('username taken!')</script><script>window.location.href='/signup'</script>");
+        }
+    }); 
+});
+
+app.post('/logInAPI',(req, res)=>{
+    var username = req.body.uname;
+    var pwd =req.body.upass;
+    request("http://localhost:3046/retrieveUser"+"/?q="+username,(error, response, body)=>{
+        if(error){
+            throw error;
+            res.send(error);
+        }else{
+            var data = JSON.parse(body);
+        }
+        if(data.length <= 0){
+            res.send("<script>alert('username not found, please sign up!')</script><script>window.location.href='/signup'</script>");
+        }else{
+            var result = userSchema.find({$and:[{uname:username},{upass:pwd}]},(error,response)=>{
+                if(error)
+                {
+                    throw error;
+                    res.send(error);
+                }
+                else
+                {
+                   var userInfo = (response);
+                }
+
+                if(userInfo.length <= 0){
+                    res.send("<script>alert('username and password do not match, please try again!')</script><script>window.location.href='/login'</script>");
+                }else{
+                    res.send("<script></script><script>window.location.href='/viewBatsmen'</script>");
+                }
+            })
+        }
+    })
+})
+
+app.get('/',(req,res)=>{
+    res.render('login');
+});
+
+app.get('/login',(req,res)=>{
+    res.render('login');
+});
+
+app.get('/signup',(req,res)=>{
+    res.render('signup');
 });
 
 app.get('/viewBatsmen',(req,res)=>{
